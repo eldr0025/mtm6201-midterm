@@ -1,8 +1,8 @@
-body{
+body {
     background-color: #F7F7F8;
 }
 
-.free-courses-banner{
+.free-courses-banner {
     background-color: #FF9500;
     color: #FFFFFF;
     border-radius: 10px;
@@ -11,6 +11,78 @@ body{
     text-align: center;
 }
 
-.main-pages{
-    
+.nav-list {
+    display: flex; /* Creating a flex box */
+    flex-direction: column; /* Changing the nav list to vertical */
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 20px;
+    color: #262626;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #F1F1F3;
+}
+
+nav ul li a.current {
+    background-color: #F1F1F3;
+}
+
+.nav-btns {
+    text-align: left;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+
+.signup {
+    color: #262626;
+    text-decoration: none;
+}
+
+.login {
+    color: #FFFFFF;
+    background-color: #FF9500;
+    text-decoration: none;
+    padding: 20px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+h1 {
+    background-color: #FCFCFD;
+    border: 1px solid #F1F1F3;
+    text-align: center;
+    margin-top: 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+h1 strong {
+    color: #FF9500;
+}
+
+.header h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.header p {
+    text-align: center;
+    margin-top: -20px;
+    font-size: 18px;
+}
+
+.explore-btn {
+    color: #FFFFFF;
+    background-color: #FF9500;
+    text-decoration: none;
+    padding: 20px;
+    margin-left: 15px;
+    border-radius: 10px;
 }
