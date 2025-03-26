@@ -82,7 +82,99 @@ h1 strong {
     color: #FFFFFF;
     background-color: #FF9500;
     text-decoration: none;
+    border: none;
     padding: 20px;
     margin-left: 15px;
     border-radius: 10px;
+}
+
+.view-pricing-btn {
+    color: #262626;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid #F1F1F3;
+    padding: 20px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.header-buttons {
+    display: flex;
+    margin-top: 85px;
+    justify-content: center;
+}
+
+.amazon, 
+.adobe,
+.notion,
+.netflix {
+    display:none;
+}
+
+.collabs {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+    margin-top: 30px; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.hero-banner {
+    margin-top: 50px;
+}
+
+.view-all-btn {
+    color: #262626;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid #F1F1F3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.view-all-btn p {
+    font-size: 14px;
+}
+
+.benefits-card {
+    background-color: #FFFFFF;
+}
+
+.benefits-card h2 {
+    text-align: right;
+    padding: 15px;
+    font-size: 45px;
+}
+
+.benefits-card h3 {
+    margin-top: -40px;
+}
+
+.benefits-card p {
+    width: 70%;
+}
+
+.arrow-btn {
+    padding-left: 410px;
+}
+
+.courses {
+    margin-top: 50px;
+}
+
+.courses-desc {
+    width: 70%;
+}
+
+.courses-card {
+    background-color: #FFFFFF;
+}
+
+.course-img-1 {
+    
 }
