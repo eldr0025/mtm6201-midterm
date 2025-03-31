@@ -15,6 +15,11 @@ body {
     font-size: 20px;
 }
 
+.header {
+    margin-top: 70px;
+    border-bottom: 1px solid #F1F1F3;
+}
+
 header img {
     margin: 0 0 0 215px;
 }
@@ -71,236 +76,6 @@ nav ul li a.current {
     border-radius: 10px;
 }
 
-h1 {
-    text-align: center;
-}
-
-h1 strong {
-    color: #FF9500;
-}
-
-.unlock-potential {
-    display: flex;
-    background-color: #FCFCFD;
-    border: 1px solid #F1F1F3;
-    margin-top: 60px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    border-radius: 10px;
-}
-
-.unlock-potential img {
-    width: 13%;
-    margin-right: 15px;
-    margin-left: 13px;
-}
-
-.header h2 {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 45px;
-}
-
-.header p {
-    text-align: center;
-    margin-top: -20px;
-    font-size: 18px;
-}
-
-.explore-btn {
-    color: #FFFFFF;
-    background-color: #FF9500;
-    text-decoration: none;
-    border: none;
-    padding: 20px;
-    margin-left: 15px;
-    border-radius: 10px;
-}
-
-.view-pricing-btn {
-    color: #262626;
-    background-color: #FFFFFF;
-    text-decoration: none;
-    border: 1px solid #F1F1F3;
-    padding: 20px;
-    margin-left: 15px;
-    border-radius: 10px;
-}
-
-.header-buttons {
-    display: flex;
-    margin-top: 85px;
-    justify-content: center;
-}
-
-.amazon, 
-.adobe,
-.notion,
-.netflix {
-    display:none;
-}
-
-.collabs {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #FFFFFF;
-    margin-top: 30px; 
-    padding-top: 40px;
-    padding-bottom: 40px;
-    border-radius: 10px;
-    border: 1px solid #F1F1F3;
-}
-
-.hero-banner {
-    width: 100%;
-    max-width: 1200px; 
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    object-fit: cover;
-}
-
-.view-all-btn {
-    color: #262626;
-    background-color: #FFFFFF;
-    text-decoration: none;
-    border: 1px solid #F1F1F3;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.view-all-btn p {
-    font-size: 14px;
-}
-
-.benefits-section {
-    margin-top: 50px;
-}
-
-.benefits-card {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    margin-top: -14px;
-    padding-bottom: 30px;
-}
-
-.benefits-card h2 {
-    text-align: right;
-    padding: 15px;
-    font-size: 45px;
-}
-
-.benefits-card h3 {
-    text-align: left;
-    margin-top: -40px;
-}
-
-.benefits-card p {
-    width: 70%;
-}
-
-.benefits-crd-content {
-    margin-left: 100px;
-}
-
-.arrow-btn {
-    display: flex;
-    margin-left: 420px;
-}
-
-.courses {
-    margin-top: 50px;
-}
-
-.courses-desc {
-    width: 70%;
-}
-
-.courses-card {
-    background-color: #FFFFFF;
-    border: 1px solid #F1F1F3;
-    border-radius: 10px;
-    margin-top: 20px;
-    padding: 20px;
-}
-
-.courses-card h3 {
-    text-align: left;
-    margin-top: 30px;
-}
-
-.course-card-info-btn,
-.course-card-info-btn-2 {
-    background-color: #FFFFFF;
-    border: 1px solid #F1F1F3;
-    border-radius: 10px;
-    margin-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.course-card-info-btn-2 {
-    margin-left: 10px;
-}
-
-.course-card-btns {
-    display: flex;
-}
-
-.get-it-now-btn {
-    width: 100%;
-    background-color: #F7F7F8;
-    border: 1px solid #F1F1F3;
-    border-radius: 10px;
-    margin-top: 15px;
-}
-
-.course-img {
-    margin-top: 5px;
-    width: 100%;
-}
-
-.testimonials-section {
-    margin-top: 50px;
-}
-
-.testimonials-card {
-    background-color: #FFFFFF;
-    border: 1px solid #F1F1F3;
-    border-radius: 5px;
-    margin-top: 20px;
-    padding: 20px;
-}
-
-.user-line {
-    display: flex;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.user-line p {
-    margin-left: 10px;
-}
-
-.user-line .get-it-now-btn {
-    margin-left: 35px;
-}
-
-.user-line-background {
-    background-color: #FCFCFD;
-    border-radius: 5px;
-    margin-top: 20px;
-    width: 100%;
-}
-
 .monthly-yearly-box {
     display: flex;
     background-color: #FFFFFF;
@@ -308,6 +83,7 @@ h1 strong {
     border-radius: 10px;
     width: 36%;
     margin-left: 150px;
+    margin-top: 45px;
 }
 
 .monthly-btn {
@@ -434,6 +210,20 @@ h1 strong {
     line-height: 4.2;
 }
 
+.view-all-btn {
+    color: #262626;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid #F1F1F3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 .faq-section .view-all-btn {
     margin-top: -10px;
     margin-left: 20px;
@@ -444,6 +234,7 @@ h1 strong {
 
 .faq-section {
     background-color: #FFFFFF;
+    margin-top: 50px;
     padding-bottom: 20px;
     border-radius: 10px;
 }

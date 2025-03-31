@@ -1,0 +1,236 @@
+body {
+    background-color: #F7F7F8;
+}
+
+.free-courses-banner {
+    background-color: #FF9500;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 45px 15px 15px 15px;
+    padding: 1px;
+    text-align: center;
+}
+
+.free-courses-banner p {
+    font-size: 20px;
+}
+
+.header {
+    margin-top: 70px;
+}
+
+header img {
+    margin: 0 0 0 215px;
+}
+
+.header img {
+    width: 100%;
+    max-width: 1200px; 
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.nav-list {
+    display: flex; /* Creating a flex box */
+    flex-direction: column; /* Changing the nav list to vertical */
+    list-style: none;
+    align-items: center; 
+    padding: 0;
+}
+
+.nav-list li {
+    width: 100%; /* Ensures all list items are the same width */
+    text-align: center; /* Ensures text inside is centered */
+}
+
+nav ul li a {
+    padding: 20px 50px;
+    color: #262626;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 1px solid #F1F1F3;
+    width: 73%;
+}
+
+nav ul li a.current {
+    background-color: #F1F1F3;
+    width: 73%;
+    border-radius: 5px;
+}
+
+.nav-btns {
+    text-align: left;
+    margin-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #F1F1F3;
+}
+
+.signup {
+    color: #262626;
+    text-decoration: none;
+}
+
+.login {
+    color: #FFFFFF;
+    background-color: #FF9500;
+    text-decoration: none;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.large-info-card {
+    background-color: #FFFFFF;
+    margin-top: -20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.large-info-card h2 {
+    text-align: right;
+    padding: 25px;
+    font-size: 45px;
+}
+
+.info-sub-header {
+    margin-top: -40px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.info-card {
+    border: 1px solid #F1F1F3;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.info-card-highlighted {
+    border: 1px solid #FFD599;
+    box-shadow: 0 0 0 4px #FFF4E5;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.time-btn {
+    display: flex;
+    background-color: #F7F7F8;
+    color: #59595A;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.time-btn-highlighted {
+    display: flex;
+    background-color: #FFEACC;
+    color: #59595A;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.time-btn img {
+    margin-right: 5px;
+}
+
+footer {
+    background-color: #FFFFFF;
+    margin-top: 50px;
+    margin-bottom: -20px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+footer ul {
+    list-style: none;
+    margin-left: -21px;
+    line-height: 0.1;
+}
+
+.footer-flex-display {
+    display: flex;
+}
+
+.footer-flex-display p {
+    margin-left: 10px;
+}
+
+.footer-logo {
+    margin-right: 10px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+footer ul li a {
+    color: #59595A;
+    text-decoration: none;
+}
+
+.home-and-about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 5px;
+}
+
+.footer-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    align-items: start; 
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item h2 {
+    margin-left: 19px;
+    margin-top: 5px;
+}
+
+.social-profiles-flex {
+    display: flex;
+    margin-top: -10px;
+    border-bottom: 1px solid #F1F1F3;
+    gap: 15px;
+}
+
+.social-profiles {
+    margin-left: 19px;
+    margin-bottom: 25px;
+}
+
+.social-profiles-flex img {
+    margin-bottom: 20px;
+}
+
+.copyright-line {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 17px;
+    color: #656567;
+}
