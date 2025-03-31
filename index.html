@@ -7,17 +7,17 @@
     <title>eldr0025 Midterm</title>
 </head>
 <body>
-    <header>
+    <header role="banner">
         
         <!-- Free Courses Banner -->
-        <div class="free-courses-banner">
+        <div class="free-courses-banner" role="status" aria-live="polite">
             <p>Free Courses 🌟 Sale Ends Soon, Get It Now ➔</p>
         </div>
 
         <img src="/images/logo.svg" alt="Company logo">
 
         <!-- Navigation Bar -->
-        <nav role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <ul class="nav-list" role="list">
               <li><a href="#" class="current" itemprop="url" role="link"><span itemprop="name">Home</span></a></li>
               <li><a href="./courses-open.html" itemprop="url" role="link"><span itemprop="name">Courses</span></a></li>
@@ -28,31 +28,31 @@
 
             <!-- Navigation Links -->
             <div class="nav-btns">
-                <a href="#" class="signup">Sign Up</a>
-                <a href="#" class="login">Login</a>
+                <a href="#" class="signup" role="button" aria-label="Sign Up for an Account">Sign Up</a>
+                <a href="#" class="login" role="button" aria-label="Log in to Your Account">Login</a>
             </div>
         </nav>
         
     </header>
 
-    <main>
+    <main role="main">
         <div class="container">
             <!-- Header -->
-            <section class="header">
+            <section class="header" role="region" aria-labelledby="unlock-title">
                 <div class="unlock-potential">
-                    <img src="/images/bolt.svg" alt="Bolt">
-                    <h1><strong>Unlock</strong> Your Creative Potential</h1>
+                    <img src="/images/bolt.svg" role="img" alt="Lightning bolt representing creativity">
+                    <h1 id="unlock-title" role="heading" aria-level="1"><strong>Unlock</strong> Your Creative Potential</h1>
                 </div>
-                <h2>with Online Design and Development Courses.</h2>
+                <h2 role="heading" aria-level="2">with Online Design and Development Courses.</h2>
                 <p>Learn from Industry Experts and Enchance Your Skills.<p>
                 <div class="header-buttons">
                     <div>
-                        <button class="explore-btn">
+                        <button class="explore-btn" role="button">
                             <span>Explore Courses</span>
                         </button>
                     </div>
                     <div>
-                        <button class="view-pricing-btn">
+                        <button class="view-pricing-btn" role="button">
                             <span>View Pricing</span>
                         </button>
                     </div>
@@ -61,25 +61,25 @@
 
             <!-- Collaborators -->
             <div class="collabs">
-                <img src="images/zapier.svg" class="zapier" alt="Zapier Logo">
-                <img src="images/spotify.svg" class="spotify" alt="Spotify Logo">
-                <img src="images/zoom.svg" class="zoom" alt="Zoom Logo">
-                <img src="images/amazon.svg" class="amazon" alt="Amazon Logo">
-                <img src="images/adobe.svg" class="adobe" alt="Adobe Logo">
-                <img src="images/notion.svg" class="notion" alt="Notion Logo">
-                <img src="images/netflix.svg" class="netflix" alt="Netflix Logo">
+                <img src="images/zapier.svg" class="zapier" role="img" alt="Zapier Logo">
+                <img src="images/spotify.svg" class="spotify" role="img" alt="Spotify Logo">
+                <img src="images/zoom.svg" class="zoom" role="img" alt="Zoom Logo">
+                <img src="images/amazon.svg" class="amazon" role="img" alt="Amazon Logo">
+                <img src="images/adobe.svg" class="adobe" role="img" alt="Adobe Logo">
+                <img src="images/notion.svg" class="notion"  role="img" alt="Notion Logo">
+                <img src="images/netflix.svg" class="netflix" role="img" alt="Netflix Logo">
             </div>
 
             <!-- Hero Banner -->
-            <img src="images/container.png" class="hero-banner" alt="Hero Banner of people talking in a colorful setting">
+            <img src="images/container.png" class="hero-banner" role="img" alt="Hero Banner of people talking in a colorful setting">
 
             <!-- Benefits -->
-            <section class="benefits-section">
+            <section class="benefits-section" role="region" aria-labelledby="benefits-title">
                 <div class="container">
-                    <h2>Benefits</h2>
+                    <h2 id="benefits-title" role="heading" aria-level="1">Benefits</h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                     <div>
-                        <button class="view-all-btn">
+                        <button class="view-all-btn" role="button" aria-label="View all benefits">
                             <p>View All</p>
                         </button>
                     </div>
@@ -87,86 +87,86 @@
                     <!-- Benefits Cards -->
 
                     <!-- I used div class with the same "benefits-card" name through each service card so that I can easily apply the same styles to everything in this section -->
-                    <div class="benefits-card"> 
-                        <h2>01</h2>
+                    <div class="benefits-card" role="article" aria-labelledby="benefit-01"> 
+                        <h2 role="heading" aria-level="2">01</h2>
                         
                         <div class="benefits-crd-content">
-                            <h3>Flexible Learning Schedule</h3>
+                            <h3 id="benefit-01" role="heading" aria-level="3">Flexible Learning Schedule</h3>
                             <p>Fit your coursework around your existing commitments and obligations.</p>
                         </div>
                         
-                        <button class="arrow-btn">
-                            <img src="images/arrow.svg" alt="Orange Diagonal Arrow">
+                        <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
+                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow">
                         </button>
                         
                     </div>
 
-                    <div class="benefits-card"> 
-                        <h2>02</h2>
+                    <div class="benefits-card" role="article" aria-labelledby="benefit-02"> 
+                        <h2 role="heading" aria-level="2">02</h2>
                         
                         <div class="benefits-crd-content">
-                            <h3>Expert Instruction</h3>
+                            <h3 id="benefit-02" role="heading" aria-level="3">Expert Instruction</h3>
                             <p>Learn from industry experts who have hands-on experience in design and development.</p>
                         </div>
                         
-                        <button class="arrow-btn">
-                            <img src="images/arrow.svg" alt="Orange Diagonal Arrow">
+                        <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
+                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow">
                         </button>
                         
                     </div>
 
-                    <div class="benefits-card"> 
-                        <h2>03</h2>
+                    <div class="benefits-card" role="article" aria-labelledby="benefit-03"> 
+                        <h2 role="heading" aria-level="2">03</h2>
                         
                         <div class="benefits-crd-content">
-                            <h3>Diverse Course Offerings</h3>
+                            <h3 id="benefit-03" role="heading" aria-level="3">Diverse Course Offerings</h3>
                             <p>Explore a wide range of design and development courses covering various topics.</p>
                         </div>
                         
-                        <button class="arrow-btn">
-                            <img src="images/arrow.svg" alt="Orange Diagonal Arrow">
+                        <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
+                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow">
                         </button>
             
                     </div>
 
-                    <div class="benefits-card"> 
-                        <h2>04</h2>
+                    <div class="benefits-card" role="article" aria-labelledby="benefit-04"> 
+                        <h2 role="heading" aria-level="2">04</h2>
                         
                         <div class="benefits-crd-content">
-                        <h3>Updated Curriculum</h3>
+                        <h3 id="benefit-04" role="heading" aria-level="3">Updated Curriculum</h3>
                         <p>Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
                         </div>
                         
-                        <button class="arrow-btn">
-                            <img src="images/arrow.svg" alt="Orange Diagonal Arrow">
+                        <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
+                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow">
                         </button>
 
                     </div>
 
-                    <div class="benefits-card"> 
-                        <h2>05</h2>
+                    <div class="benefits-card" role="article" aria-labelledby="benefit-05"> 
+                        <h2 role="heading" aria-level="2">05</h2>
                         
                         <div class="benefits-crd-content">
-                            <h3>Practical Projects and Assignments</h3>
+                            <h3 id="benefit-05" role="heading" aria-level="3">Practical Projects and Assignments</h3>
                             <p>Develop a portfolio showcasing your skills and abilities to potential employers.</p>
                         </div>
                       
-                        <button class="arrow-btn">
-                            <img src="images/arrow.svg" alt="Orange Diagonal Arrow">
+                        <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
+                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow">
                         </button>
                 
                     </div>
 
-                    <div class="benefits-card"> 
-                        <h2>06</h2>
+                    <div class="benefits-card" role="article" aria-labelledby="benefit-06"> 
+                        <h2 role="heading" aria-level="2">06</h2>
                         
                         <div class="benefits-crd-content">
-                            <h3>Interactive Learning Environment</h3>
+                            <h3 id="benefit-06" role="heading" aria-level="3">Interactive Learning Environment</h3>
                             <p>Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.</p>
                         </div>
 
-                        <button class="arrow-btn">
-                            <img src="images/arrow.svg" alt="Orange Diagonal Arrow">
+                        <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
+                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow">
                         </button>
 
                     </div>
@@ -174,12 +174,12 @@
             </section>
 
             <!-- Our Courses -->
-            <section class="courses">
+            <section class="courses" role="region" aria-labelledby="courses-title">
                 <div class="container">
-                    <h2>Our Courses</h2>
+                    <h2 id="courses-title" role="heading" aria-level="2">Our Courses</h2>
                     <p class="courses-desc">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                     <div>
-                        <button class="view-all-btn">
+                        <button class="view-all-btn" role="button" aria-label="View all courses">
                             <p>View All</p>
                         </button>
                     </div>
@@ -187,19 +187,19 @@
                     <!-- Courses Cards -->
 
                     <!-- I used div class with the same "courses-card" name through each service card so that I can easily apply the same styles to everything in this section -->
-                    <div class="courses-card">
+                    <div class="courses-card" role="article" aria-labelledby="course-1">
                         
-                        <img src="images/course-card-1.png" class="course-img" alt="Person writing on sticky note">
+                        <img src="images/course-card-1.png" class="course-img" role="img" alt="Person writing on sticky note">
                         
                         
                         <div class="course-card-btns">
                             <div>
-                                <button class="course-card-info-btn">
+                                <button class="course-card-info-btn" role="button">
                                     <p>4 Weeks</p>
                                 </button>
                             </div>
                             <div>
-                                <button class="course-card-info-btn-2">
+                                <button class="course-card-info-btn-2" role="button">
                                     <p>Beginner</p>
                                 </button>
                             </div>
@@ -207,28 +207,28 @@
                         
                         <p>By John Smith</p>
                         
-                        <h3>Web Design Fundamentals</h3>
+                        <h3 id="course-1" role="heading" aria-level="3">Web Design Fundamentals</h3>
                         <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
                         <div>
-                            <button class="get-it-now-btn">
+                            <button class="get-it-now-btn" role="button">
                                 <p>Get it Now</p>
                             </button>
                         </div>
                     </div>
 
-                    <div class="courses-card">
+                    <div class="courses-card" role="article" aria-labelledby="course-2">
                         
-                        <img src="images/course-card-2.png" class="course-img" alt="Person typing on a keyboard in front of a computer">
+                        <img src="images/course-card-2.png" class="course-img" role="img" alt="Person typing on a keyboard in front of a computer">
                         
                         
                         <div class="course-card-btns">
                             <div>
-                                <button class="course-card-info-btn">
+                                <button class="course-card-info-btn" role="button">
                                     <p>6 Weeks</p>
                                 </button>
                             </div>
                             <div>
-                                <button class="course-card-info-btn-2">
+                                <button class="course-card-info-btn-2" role="button">
                                     <p>Intermediate</p>
                                 </button>
                             </div>
@@ -236,28 +236,28 @@
 
                         <p>By Emily Johnson</p>
                         
-                        <h3>UI/UX Design</h3>
+                        <h3 id="course-2" role="heading" aria-level="3">UI/UX Design</h3>
                         <p>Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
                         <div>
-                            <button class="get-it-now-btn">
+                            <button class="get-it-now-btn" role="button">
                                 <p>Get it Now</p>
                             </button>
                         </div>
                     </div>
 
-                    <div class="courses-card">
+                    <div class="courses-card" role="article" aria-labelledby="course-3">
                         
-                        <img src="images/course-card-3.png" class="course-img" alt="Person looking at phone with book and glasses on table in front of them">
+                        <img src="images/course-card-3.png" class="course-img" role="img" alt="Person looking at phone with book and glasses on table in front of them">
                         
                         
                         <div class="course-card-btns">
                             <div>
-                                <button class="course-card-info-btn">
+                                <button class="course-card-info-btn" role="button">
                                     <p>8 Weeks</p>
                                 </button>
                             </div>
                             <div>
-                                <button class="course-card-info-btn-2">
+                                <button class="course-card-info-btn-2" role="button">
                                     <p>Intermediate</p>
                                 </button>
                             </div>
@@ -265,28 +265,28 @@
 
                         <p>By David Brown</p>
                         
-                        <h3>Mobile App Development</h3>
+                        <h3 id="course-3" role="heading" aria-level="3">Mobile App Development</h3>
                         <p>Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
                         <div>
-                            <button class="get-it-now-btn">
+                            <button class="get-it-now-btn" role="button">
                                 <p>Get it Now</p>
                             </button>
                         </div>
                     </div>
 
-                    <div class="courses-card">
+                    <div class="courses-card" role="article" aria-labelledby="course-4">
                         
-                        <img src="images/course-card-4.png" class="course-img" alt="Person fanning out paint color cards over a desk with keyboard and coffee">
+                        <img src="images/course-card-4.png" class="course-img" role="img" alt="Person fanning out paint color cards over a desk with keyboard and coffee">
                         
                         
                         <div class="course-card-btns">
                             <div>
-                                <button class="course-card-info-btn">
+                                <button class="course-card-info-btn" role="button">
                                     <p>10 Weeks</p>
                                 </button>
                             </div>
                             <div>
-                                <button class="course-card-info-btn-2">
+                                <button class="course-card-info-btn-2" role="button">
                                     <p>Beginner</p>
                                 </button>
                             </div>
@@ -294,28 +294,28 @@
 
                         <p>By Sarah Thompson</p>
                         
-                        <h3>Graphic Design for Beginners</h3>
+                        <h3 id="course-4" role="heading" aria-level="3">Graphic Design for Beginners</h3>
                         <p>Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
                         <div>
-                            <button class="get-it-now-btn">
+                            <button class="get-it-now-btn" role="button">
                                 <p>Get it Now</p>
                             </button>
                         </div>
                     </div>
 
-                    <div class="courses-card">
+                    <div class="courses-card" role="article" aria-labelledby="course-5">
                             
-                        <img src="images/course-card-5.png" class="course-img" alt="Person looking at laptop screen">
+                        <img src="images/course-card-5.png" class="course-img" role="img" alt="Person looking at laptop screen">
                         
                         
                         <div class="course-card-btns">
                             <div>
-                                <button class="course-card-info-btn">
+                                <button class="course-card-info-btn" role="button">
                                     <p>10 Weeks</p>
                                 </button>
                             </div>
                             <div>
-                                <button class="course-card-info-btn-2">
+                                <button class="course-card-info-btn-2" role="button">
                                     <p>Intermediate</p>
                                 </button>
                             </div>
@@ -323,28 +323,28 @@
 
                         <p>By Michael Adams</p>
                         
-                        <h3>Front-End Web Development</h3>
+                        <h3 id="course-5" role="heading" aria-level="3">Front-End Web Development</h3>
                         <p>Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
                         <div>
-                            <button class="get-it-now-btn">
+                            <button class="get-it-now-btn" role="button">
                                 <p>Get it Now</p>
                             </button>
                         </div>
                     </div>
 
-                    <div class="courses-card">
+                    <div class="courses-card" role="article" aria-labelledby="course-6">
                         
-                        <img src="images/course-card-6.png" class="course-img" alt="Person smiling while typing on keyboard">
+                        <img src="images/course-card-6.png" class="course-img" role="img" alt="Person smiling while typing on keyboard">
                     
                         
                         <div class="course-card-btns">
                             <div>
-                                <button class="course-card-info-btn">
+                                <button class="course-card-info-btn" role="button">
                                     <p>6 Weeks</p>
                                 </button>
                             </div>
                             <div>
-                                <button class="course-card-info-btn-2">
+                                <button class="course-card-info-btn-2" role="button">
                                     <p>Advance</p>
                                 </button>
                             </div>
@@ -352,10 +352,10 @@
 
                         <p>By Jennifer Wilson</p>
                         
-                        <h3>Advanced JavaScript</h3>
+                        <h3 id="course-6" role="heading" aria-level="3">Advanced JavaScript</h3>
                         <p>Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.</p>
                         <div>
-                            <button class="get-it-now-btn">
+                            <button class="get-it-now-btn" role="button">
                                 <p>Get it Now</p>
                             </button>
                         </div>
@@ -364,12 +364,12 @@
             </section>
 
             <!-- Our Testimonials -->
-            <section class="testimonials-section">
+            <section class="testimonials-section" role="region" aria-labelledby="testimonials-title">
                 <div class="container">
-                    <h2>Our Testimonials</h2>
+                    <h2 id="testimonials-title" id="course-5" role="heading" aria-level="2">Our Testimonials</h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                     <div>
-                        <button class="view-all-btn">
+                        <button class="view-all-btn" role="button" aria-label="View all testimonials">
                             <p>View All</p>
                         </button>
                     </div>
@@ -377,19 +377,19 @@
                     <!-- Testimonials Cards -->
 
                     <!-- I used div class with the same "testimonials-card" name through each service card so that I can easily apply the same styles to everything in this section -->
-                    <div class="testimonials-card">
+                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-sarah">
                         
                         <p>The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
                         
                         <div class="user-line user-line-background">
                             
-                            <img src="images/testimonials-pfp.png" alt="Headshot for a profile picture">
+                            <img src="images/testimonials-pfp.png" role="img" alt="Headshot for a profile picture">
                             
 
-                            <p>Sarah L</p>
+                            <p id="testimonial-sarah">Sarah L</p>
                             
                             <div>
-                                <button class="get-it-now-btn">
+                                <button class="get-it-now-btn" role="button">
                                     <p>Read Full Story</p>
                                 </button>
                             </div>
@@ -397,19 +397,19 @@
 
                     </div>
 
-                    <div class="testimonials-card">
+                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-jason">
                         
                         <p>The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
                         
                         <div class="user-line">
                             <div class="testimonials-img">
-                                <img src="images/jason-m.png" alt="Headshot for a profile picture">
+                                <img src="images/jason-m.png" role="img" alt="Headshot for a profile picture">
                             </div>
                         
-                            <p>Jason M</p>
+                            <p id="testimonial-jason">Jason M</p>
                             
                             <div>
-                                <button class="get-it-now-btn">
+                                <button class="get-it-now-btn" role="button">
                                     <p>Read Full Story</p>
                                 </button>
                             </div>
@@ -417,19 +417,19 @@
 
                     </div>
 
-                    <div class="testimonials-card">
+                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-emily">
                         
                         <p>The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
                         
                         <div class="user-line">
                             <div class="testimonials-img">
-                                <img src="images/emily-r.png" alt="Headshot for a profile picture">
+                                <img src="images/emily-r.png" role="img" alt="Headshot for a profile picture">
                             </div>
 
-                            <p>Emily R</p>
+                            <p id="testimonial-emily">Emily R</p>
                             
                             <div>
-                                <button class="get-it-now-btn">
+                                <button class="get-it-now-btn" role="button">
                                     <p>Read Full Story</p>
                                 </button>
                             </div>
@@ -437,19 +437,19 @@
 
                     </div>
 
-                    <div class="testimonials-card">
+                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-michael">
                         
                         <p>I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
                         
                         <div class="user-line">
                             <div class="testimonials-img">
-                                <img src="images/michael-k.png" alt="Headshot for a profile picture">
+                                <img src="images/michael-k.png" role="img" alt="Headshot for a profile picture">
                             </div>
 
-                            <p>Michael K</p>
+                            <p id="testimonial-michael">Michael K</p>
                             
                             <div>
-                                <button class="get-it-now-btn">
+                                <button class="get-it-now-btn" role="button">
                                     <p>Read Full Story</p>
                                 </button>
                             </div>
@@ -461,62 +461,62 @@
             </section>
 
             <!-- Our Pricing -->
-            <section class="pricing-section">
+            <section class="pricing-section" role="region" aria-labelledby="pricing-title">
                 <div class="container">
-                    <h2>Our Pricing</h2>
+                    <h2 id="pricing-title" role="heading" aria-level="2">Our Pricing</h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                    <div class="monthly-yearly-box">
-                        <button class="monthly-btn">
+                    <div class="monthly-yearly-box" role="tablist" aria-label="Pricing options">
+                        <button class="monthly-btn" role="tab" aria-selected="true" aria-controls="pricing-monthly">
                             <p>Monthly</p>
                         </button>
-                        <p class="yearly-text">Yearly</p>
+                        <p class="yearly-text" role="tab" aria-selected="false" aria-controls="pricing-yearly">Yearly</p>
                     </div>
 
                     <!-- Pricing Cards -->
 
                     <!-- I used div class with the same "pricing-card" name through each service card so that I can easily apply the same styles to everything in this section -->
                     <div class="card-section">
-                        <div class="pricing-card">
+                        <div class="pricing-card" role="article" aria-labelledby="free-plan">
                             <div class="card-background">
                                 <div class="plan-text">
-                                    <h2>Free Plan</h2>
+                                    <h2 id="free-plan" role="heading" aria-level="2">Free Plan</h2>
                                 </div>
-                                <h3>$0<strong>/month</strong></h3>
+                                <h3 role="heading" aria-level="3">$0<strong>/month</strong></h3>
                                 <div class="white-background">
                                     
-                                        <h4>Available Features</h4>
-                                        <ul>
-                                            <li>
-                                                <img src="images/checkmark.svg" alt="checkmark">
+                                        <h4 role="heading" aria-level="4">Available Features</h4>
+                                        <ul role="list">
+                                            <li role="listitem">
+                                                <img src="images/checkmark.svg" role="img" alt="checkmark">
                                                 <p>Access to selected free courses.</p>
                                             </li>
-                                            <li>
-                                                <img src="images/checkmark.svg" alt="checkmark">
+                                            <li role="listitem">
+                                                <img src="images/checkmark.svg" role="img" alt="checkmark">
                                                 <p>Limited course materials and resources.</p>
                                             </li>
-                                            <li>
-                                                <img src="images/checkmark.svg" alt="checkmark">
+                                            <li role="listitem">
+                                                <img src="images/checkmark.svg" role="img" alt="checkmark">
                                                 <p>Basic community support.</p>
                                             </li>
-                                            <li>
-                                                <img src="images/checkmark.svg" alt="checkmark">
+                                            <li role="listitem">
+                                                <img src="images/checkmark.svg" role="img" alt="checkmark">
                                                 <p>No certification upon completion.</p>
                                             </li>
-                                            <li>
-                                                <img src="images/checkmark.svg" alt="checkmark">
+                                            <li role="listitem">
+                                                <img src="images/checkmark.svg" role="img" alt="checkmark">
                                                 <p>Ad-supported platform.</p>
                                             </li>
-                                            <li>
-                                                <img src="images/x.svg" alt="x">
+                                            <li role="listitem">
+                                                <img src="images/x.svg" role="img" alt="x">
                                                 <p>Access to exclusive Pro Plan community forums.</p>
                                             </li>
-                                            <li>
-                                                <img src="images/x.svg" alt="x">
+                                            <li role="listitem">
+                                                <img src="images/x.svg" role="img" alt="x">
                                                 <p>Early access to new courses and updates.</p>
                                             </li>
                                         </ul>
                                         <div>
-                                            <button class="get-started-btn">
+                                            <button class="get-started-btn" role="button" aria-label="Get started with the Free Plan">
                                                 <p>Get Started</p>
                                             </button>
                                         </div>
@@ -524,46 +524,46 @@
                             </div>
                         </div>
 
-                        <div class="pricing-card">
+                        <div class="pricing-card" role="article" aria-labelledby="free-plan">
                             <div class="card-background">
                                 <div class="plan-text">
-                                    <h2>Pro Plan</h2>
+                                    <h2 id="pro-plan" role="heading" aria-level="2">Pro Plan</h2>
                                 </div>
-                                <h3>$79<strong>/month</strong></h3>
+                                <h3 role="heading" aria-level="3">$79<strong>/month</strong></h3>
                                 <div class="white-background">
-                                    <h4>Available Features</h4>
-                                    <ul>
-                                        <li>
-                                            <img src="images/checkmark.svg" alt="checkmark">
+                                    <h4 role="heading" aria-level="4">Available Features</h4>
+                                    <ul role="list">
+                                        <li role="listitem">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark">
                                             <p>Unlimited access to all courses.</p>
                                         </li>
-                                        <li>
-                                            <img src="images/checkmark.svg" alt="checkmark">
+                                        <li role="listitem">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark">
                                             <p>Unlimited course materials and resources.</p>
                                         </li>
-                                        <li>
-                                            <img src="images/checkmark.svg" alt="checkmark">
+                                        <li role="listitem">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark">
                                             <p>Priority support from instructors.</p>
                                         </li>
-                                        <li>
-                                            <img src="images/checkmark.svg" alt="checkmark">
+                                        <li role="listitem">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark">
                                             <p>Course completion certificates.</p>
                                         </li>
-                                        <li>
-                                            <img src="images/checkmark.svg" alt="checkmark">
+                                        <li role="listitem">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark">
                                             <p>Ad-free experience.</p>
                                         </li>
-                                        <li>
-                                            <img src="images/checkmark.svg" alt="checkmark">
+                                        <li role="listitem">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark">
                                             <p>Access to exclusive Pro Plan community forums.</p>
                                         </li>
-                                        <li>
-                                            <img src="images/checkmark.svg" alt="checkmark">
+                                        <li role="listitem">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark">
                                             <p>Early access to new courses and updates.</p>
                                         </li>
                                     </ul>
                                     <div>
-                                        <button class="get-started-btn">
+                                        <button class="get-started-btn" role="button" aria-label="Get started with the Free Plan">
                                             <p>Get Started</p>
                                         </button>
                                     </div>
@@ -577,51 +577,51 @@
             </section>
 
             <!-- Frequently Asked Questions -->
-            <section class="faq-section">
+            <section class="faq-section" role="region" aria-labelledby="faq-header">
                 <div class="container">
-                    <h2 class="faq-header">Frequently Asked Questions</h2>
+                    <h2 class="faq-header" id="faq-header" role="heading" aria-level="2">Frequently Asked Questions</h2>
                     <p class="faq-sub-header">Still you have any questions? Contact our</p>
                     <p class="faq-sub-header">Team via support@skillbridge.com</p>
                     <div>
-                        <button class="view-all-btn">
+                        <button class="view-all-btn" role="button">
                             <p>See All FAQ's</p>
                         </button>
                     </div>
 
                     <!-- FAQ Card -->
                     
-                    <div class="faq-large-card">
+                    <div class="faq-large-card" role="article" aria-labelledby="frequently-asked-questions">
                         <div class="q-and-a-flex">
-                            <h2>Can I enroll in multiple courses at once?</h2>
-                            <img src="images/yellow-x.svg" alt="x">
+                            <h2 id="faq-question-1" role="heading" aria-level="2">Can I enroll in multiple courses at once?</h2>
+                            <img src="images/yellow-x.svg" role="img" alt="x">
                         </div>
 
-                        <p>Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                        <p id="faq-answer-1" hidden role="region" aria-live="polite">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
 
                         <div class="enrollment-process-background">
-                            <h2>Enrollment Process for Different Courses</h2>
-                            <img src="images/horiz-arrow.svg" alt="Horizontal arrow pointing from right to left">
+                            <h2 id="faq-question-2" role="heading" aria-level="2">Enrollment Process for Different Courses</h2>
+                            <img src="images/horiz-arrow.svg" role="img" alt="Horizontal arrow pointing from right to left">
                         </div>
                     </div>
 
-                    <div class="faq-mini-card">
-                        <h2>What kind of support can I expect from instructors</h2>
-                        <img src="images/plus.svg" alt="Plus symbol">
+                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions">
+                        <h2 id="faq-question-3" role="heading" aria-level="2">What kind of support can I expect from instructors</h2>
+                        <img src="images/plus.svg" role="img" alt="Plus symbol">
                     </div>
 
-                    <div class="faq-mini-card">
-                        <h2>Are the courses self-paced or do they have specific start and end dates?</h2>
-                        <img src="images/plus.svg" alt="Plus symbol">
+                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions">
+                        <h2 id="faq-question-4" role="heading" aria-level="2">Are the courses self-paced or do they have specific start and end dates?</h2>
+                        <img src="images/plus.svg" role="img" alt="Plus symbol">
                     </div>
 
-                    <div class="faq-mini-card">
-                        <h2>Are there any prerequisites for the courses?</h2>
-                        <img src="images/plus.svg" alt="Plus symbol">
+                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions">
+                        <h2 id="faq-question-5" role="heading" aria-level="2">Are there any prerequisites for the courses?</h2>
+                        <img src="images/plus.svg" role="img" alt="Plus symbol">
                     </div>
 
-                    <div class="faq-mini-card">
-                        <h2>Can I download the course materials for offline access?</h2>
-                        <img src="images/plus.svg" alt="Plus symbol">
+                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions">
+                        <h2 id="faq-question-6" role="heading" aria-level="2">Can I download the course materials for offline access?</h2>
+                        <img src="images/plus.svg" role="img" alt="Plus symbol">
                     </div>
                 </div>
             </section>
@@ -629,55 +629,55 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
-            <img src="images/logo.svg" class="footer-logo" alt="Company Logo">
-            <ul>
-                <li class="footer-flex-display">
-                    <img src="images/letter.svg" alt="Letter icon">
+            <img src="images/logo.svg" class="footer-logo" role="img" alt="Company Logo">
+            <ul role="list" aria-label="Contact Information">
+                <li class="footer-flex-display" role="listitem">
+                    <img src="images/letter.svg" role="img" alt="Letter icon">
                     <p>hello@skillbridge.com</p>
                 </li>
-                <li class="footer-flex-display">
-                    <img src="images/phone.svg" alt="Phone icon">
+                <li class="footer-flex-display" role="listitem">
+                    <img src="images/phone.svg" role="img" alt="Phone icon">
                     <p>+91 91813 23 2309</p>
                 </li>
-                <li class="footer-flex-display">
-                    <img src="images/pin.svg" alt="Pin icon">
+                <li class="footer-flex-display" role="listitem">
+                    <img src="images/pin.svg" role="img" alt="Pin icon">
                     <p>Ottawa, ON</p>
                 </li>
             </ul>
             
             <div class="footer-grid-layout">
                 <div class="grid-item">
-                    <h2>Home</h2>
-                    <ul class="home-and-about-list">
-                        <li><a href="#benefits">Benefits</a></li>
-                        <li><a href="#courses">Our Courses</a></li>
-                        <li><a href="#testimonials">Our Testimonials</a></li>
-                        <li><a href="#faq">Our FAQ</a></li>
+                    <h2 role="heading" aria-level="2">Home</h2>
+                    <ul class="home-and-about-list" role="list">
+                        <li role="listitem"><a href="#benefits">Benefits</a></li>
+                        <li role="listitem"><a href="#courses">Our Courses</a></li>
+                        <li role="listitem"><a href="#testimonials">Our Testimonials</a></li>
+                        <li role="listitem"><a href="#faq">Our FAQ</a></li>
                     </ul>
                 </div>
                 
                 <div class="grid-item">
-                    <h2>About Us</h2>
-                    <ul class="home-and-about-list">
-                        <li><a href="#benefits">Company</a></li>
-                        <li><a href="#courses">Achievements</a></li>
-                        <li><a href="#testimonials">Our Goals</a></li>
+                    <h2 role="heading" aria-level="2">About Us</h2>
+                    <ul class="home-and-about-list" role="list">
+                        <li role="listitem"><a href="#benefits">Company</a></li>
+                        <li role="listitem"><a href="#courses">Achievements</a></li>
+                        <li role="listitem"><a href="#testimonials">Our Goals</a></li>
                     </ul>
                 </div>
             </div>
             
-            <h2 class="social-profiles">Social Profiles</h2>
-            <ul class="social-profiles-flex">
-                <li>
-                    <img src="images/facebook.svg" alt="Facebook logo">
+            <h2 class="social-profiles" role="heading" aria-level="2">Social Profiles</h2>
+            <ul class="social-profiles-flex" role="list" aria-label="Social Media Links">
+                <li role="listitem">
+                    <img src="images/facebook.svg" role="img" alt="Facebook logo">
                 </li>
-                <li>
-                    <img src="images/twitter.svg" alt="Twitter logo">
+                <li role="listitem">
+                    <img src="images/twitter.svg" role="img" alt="Twitter logo">
                 </li>
-                <li>
-                    <img src="images/linkedin.svg" alt="LinkedIn logo">
+                <li role="listitem">
+                    <img src="images/linkedin.svg" role="img" alt="LinkedIn logo">
                 </li>
             </ul>
 
