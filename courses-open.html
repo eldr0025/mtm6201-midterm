@@ -6,30 +6,30 @@
     <link rel="stylesheet" href="./css/courses-open.css">
     <title>Courses Open</title>
 </head>
-<body>
-    <header>
+<body itemscope itemtype="https://schema.org/WebPage">
+    <header role="banner" itemscope itemtype="https://schema.org/WPHeader">
         
         <!-- Free Courses Banner -->
-        <div class="free-courses-banner">
-            <p>Free Courses 🌟 Sale Ends Soon, Get It Now ➔</p>
+        <div class="free-courses-banner" role="status" aria-live="polite" itemscope itemtype="https://schema.org/SpecialAnnouncement">
+            <p itemprop="text">Free Courses 🌟 Sale Ends Soon, Get It Now ➔</p>
         </div>
 
-        <img src="/images/logo.svg" alt="Company logo">
+        <img src="/images/logo.svg" alt="Company logo" itemprop="logo">
 
         <!-- Navigation Bar -->
-        <nav role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <ul class="nav-list" role="list">
-              <li><a href="./index.html" class="current" itemprop="url" role="link"><span itemprop="name">Home</span></a></li>
-              <li><a href="#" itemprop="url" role="link"><span itemprop="name">Courses</span></a></li>
-              <li><a href="#" itemprop="url" role="link"><span itemprop="name">About Us</span></a></li>
-              <li><a href="./pricing.html" itemprop="url" role="link"><span itemprop="name">Pricing</span></a></li>
-              <li><a href="#" itemprop="url" role="link"><span itemprop="name">Contact</span></a></li>
+              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" class="current" itemprop="url" role="link"><span itemprop="name">Home</span></a></li>
+              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./courses-open.html" itemprop="url" role="link"><span itemprop="name">Courses</span></a></li>
+              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">About Us</span></a></li>
+              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./pricing.html" itemprop="url" role="link"><span itemprop="name">Pricing</span></a></li>
+              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">Contact</span></a></li>
             </ul>
 
             <!-- Navigation Links -->
             <div class="nav-btns">
-                <a href="#" class="signup">Sign Up</a>
-                <a href="#" class="login">Login</a>
+                <a href="#" class="signup" role="button" aria-label="Sign Up for an Account" itemscope itemtype="https://schema.org/Action">Sign Up</a>
+                <a href="#" class="login" role="button" aria-label="Log in to Your Account" itemscope itemtype="https://schema.org/Action">Login</a>
             </div>
         </nav>
         
@@ -37,247 +37,247 @@
 
     <main>
         <div class="container">
-            <section class="header">
-                <h1>UI/UX Design Course</h1>
-                <p>Welcome to our UI/UX Design course! This comprehensive program will equip you with the knowledge and skills to create exceptional user interfaces (UI) and enhance user experiences (UX). Dive into the world of design thinking, wireframing, prototyping, and usability testing. Below is an overview of the curriculum<p>
-                <img src="images/course-card-2.png" alt="Person typing on a keyboard in front of a computer">
+            <section class="header" role="banner" role="banner" itemscope itemtype="https://schema.org/Course">
+                <h1 role="heading" aria-level="2" itemprop="headline">UI/UX Design Course</h1>
+                <p itemprop="description">Welcome to our UI/UX Design course! This comprehensive program will equip you with the knowledge and skills to create exceptional user interfaces (UI) and enhance user experiences (UX). Dive into the world of design thinking, wireframing, prototyping, and usability testing. Below is an overview of the curriculum<p>
+                <img src="images/course-card-2.png" alt="Person typing on a keyboard in front of a computer" role="image" itemprop="image">
             </section>
 
-            <section class="large-info-card">
+            <section class="large-info-card" role="region" aria-labelledby="section-title" itemscope itemtype="https://schema.org/ItemList">
                 
-                <h2>01</h2>
-                <h3 class="info-sub-header">Introduction to UI/UX Design</h3>
+                <h2 id="section-title" role="heading" aria-level="2" itemprop="headline">01</h2>
+                <h3 class="info-sub-header" role="heading" aria-level="3" itemprop="headline">Introduction to UI/UX Design</h3>
                 
-                <div class="info-card"> 
+                <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                     
                     <div class="info-crd-content">
-                        <h3>Understanding UI/UX Design Principles</h3>
-                        <p>Lesson 01</p>
+                        <h3 role="heading" aria-level="3" itemprop="headline">Understanding UI/UX Design Principles</h3>
+                        <p itemprop="position">Lesson 01</p>
                     </div>
                     
-                    <button class="time-btn">
-                        <img src="/images/clock.svg" alt="Clock">
-                        <p>45 Minutes</p>
+                    <button class="time-btn" aria-label="Duration: 45 Minutes" role="button">
+                        <img src="/images/clock.svg" alt="Clock" role="image" itemprop="image">
+                        <p itemprop="timeRequired">45 Minutes</p>
                     </button>
                     
                 </div>
 
-                <div class="info-card-highlighted"> 
+                <div class="info-card-highlighted" role="article" aria-labelledby="highlighted-title" itemscope itemtype="https://schema.org/CourseSection"> 
                     
                     <div class="info-crd-content">
-                        <h3>Importance of User - Centered Design</h3>
-                        <p>Lesson 02</p>
+                        <h3 id="highlighted-title" role="heading" aria-level="3" itemprop="headline">Importance of User - Centered Design</h3>
+                        <p itemprop="position">Lesson 02</p>
                     </div>
                     
-                    <button class="time-btn-highlighted">
-                        <img src="/images/clock.svg" alt="Clock">
-                        <p>1 hour</p>
+                    <button class="time-btn-highlighted" aria-label="Duration: 1 hour">
+                        <img src="/images/clock.svg" alt="Clock" role="image" itemprop="image">
+                        <p itemprop="timeRequired">1 hour</p>
                     </button>
                     
                 </div>
 
-                <div class="info-card"> 
+                <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                     
                     <div class="info-crd-content">
-                        <h3>The Role of UI/UX Design in Product Development</h3>
-                        <p>Lesson 03</p>
+                        <h3 role="heading" aria-level="3" itemprop="headline">The Role of UI/UX Design in Product Development</h3>
+                        <p itemprop="position">Lesson 03</p>
                     </div>
                     
-                    <button class="time-btn">
-                        <img src="/images/clock.svg" alt="Clock">
-                        <p>45 Minutes</p>
-                    </button>
-                    
-                </div>
-            </section>
-
-            <section class="large-info-card">
-                
-                <h2>02</h2>
-                <h3 class="info-sub-header">User Research and Analysis</h3>
-                
-                <div class="info-card"> 
-                    
-                    <div class="info-crd-content">
-                        <h3>Conducting User Research and Interviews</h3>
-                        <p>Lesson 01</p>
-                    </div>
-                    
-                    <button class="time-btn">
-                        <img src="/images/clock.svg" alt="Clock">
-                        <p>1 hour</p>
-                    </button>
-                    
-                </div>
-
-                <div class="info-card"> 
-                    
-                    <div class="info-crd-content">
-                        <h3>Analyzing User Needs and Behavior</h3>
-                        <p>Lesson 02</p>
-                    </div>
-                    
-                    <button class="time-btn">
-                        <img src="/images/clock.svg" alt="Clock">
-                        <p>1 hour</p>
-                    </button>
-                    
-                </div>
-
-                <div class="info-card"> 
-                    
-                    <div class="info-crd-content">
-                        <h3>Creating User Personas and Scenarios</h3>
-                        <p>Lesson 03</p>
-                    </div>
-                    
-                    <button class="time-btn">
-                        <img src="/images/clock.svg" alt="Clock">
-                        <p>45 Minutes</p>
+                    <button class="time-btn" aria-label="Duration: 45 Minutes" role="button">
+                        <img src="/images/clock.svg" alt="Clock" role="image" itemprop="image">
+                        <p itemprop="timeRequired">45 Minutes</p>
                     </button>
                     
                 </div>
             </section>
 
-            <section class="large-info-card">
+            <section class="large-info-card" role="region" aria-labelledby="section-title" itemscope itemtype="https://schema.org/ItemList">
                 
-                <h2>03</h2>
-                <h3 class="info-sub-header">Wireframing and Prototyping</h3>
+                <h2 id="section-title" role="heading" aria-level="2" itemprop="headline">02</h2>
+                <h3 class="info-sub-header" role="heading" aria-level="3" itemprop="headline">User Research and Analysis</h3>
                 
-                <div class="info-card"> 
+                <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                     
                     <div class="info-crd-content">
-                        <h3>Introduction to Wireframing Tools and Techniques</h3>
-                        <p>Lesson 01</p>
+                        <h3 role="heading" aria-level="3" itemprop="headline">Conducting User Research and Interviews</h3>
+                        <p itemprop="position">Lesson 01</p>
                     </div>
                     
-                    <button class="time-btn">
-                        <img src="/images/clock.svg" alt="Clock">
-                        <p>1 hour</p>
+                    <button class="time-btn" aria-label="Duration: 1 hour" role="button">
+                        <img src="/images/clock.svg" alt="Clock" role="image" itemprop="image">
+                        <p itemprop="timeRequired">1 hour</p>
                     </button>
                     
                 </div>
 
-                <div class="info-card"> 
+                <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                     
                     <div class="info-crd-content">
-                        <h3>Creating Low-Fidelity Wireframes</h3>
-                        <p>Lesson 02</p>
+                        <h3 role="heading" aria-level="3" itemprop="headline">Analyzing User Needs and Behavior</h3>
+                        <p itemprop="position">Lesson 02</p>
                     </div>
                     
-                    <button class="time-btn">
-                        <img src="/images/clock.svg" alt="Clock">
-                        <p>1 hour</p>
+                    <button class="time-btn" aria-label="Duration: 1 hour" role="button">
+                        <img src="/images/clock.svg" alt="Clock" role="image" itemprop="image">
+                        <p itemprop="timeRequired">1 hour</p>
                     </button>
                     
                 </div>
 
-                <div class="info-card"> 
+                <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                     
                     <div class="info-crd-content">
-                        <h3>Prototyping and Interactive Mockups</h3>
-                        <p>Lesson 03</p>
+                        <h3 role="heading" aria-level="3" itemprop="headline">Creating User Personas and Scenarios</h3>
+                        <p itemprop="position">Lesson 03</p>
                     </div>
                     
-                    <button class="time-btn">
-                        <img src="/images/clock.svg" alt="Clock">
-                        <p>1 hour</p>
+                    <button class="time-btn" aria-label="Duration: 45 Minutes" role="button">
+                        <img src="/images/clock.svg" alt="Clock" role="image" itemprop="image">
+                        <p itemprop="timeRequired">45 Minutes</p>
                     </button>
                     
                 </div>
             </section>
 
-            <section class="large-info-card">
+            <section class="large-info-card" role="region" aria-labelledby="section-title" itemscope itemtype="https://schema.org/ItemList">
                 
-                <h2>04</h2>
-                <h3 class="info-sub-header">Visual Design and Branding</h3>
+                <h2 id="section-title" role="heading" aria-level="2" itemprop="headline">03</h2>
+                <h3 class="info-sub-header" role="heading" aria-level="3" itemprop="headline">Wireframing and Prototyping</h3>
                 
-                <div class="info-card"> 
+                <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                     
                     <div class="info-crd-content">
-                        <h3>Color Theory and Typography in UI Design</h3>
-                        <p>Lesson 01</p>
+                        <h3 role="heading" aria-level="3" itemprop="headline">Introduction to Wireframing Tools and Techniques</h3>
+                        <p itemprop="position">Lesson 01</p>
                     </div>
                     
-                    <button class="time-btn">
-                        <img src="/images/clock.svg" alt="Clock">
-                        <p>1 hour</p>
+                    <button class="time-btn" aria-label="Duration: 1 hour" role="button">
+                        <img src="/images/clock.svg" alt="Clock" role="image" itemprop="image">
+                        <p itemprop="timeRequired">1 hour</p>
                     </button>
                     
                 </div>
 
-                <div class="info-card"> 
+                <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                     
                     <div class="info-crd-content">
-                        <h3>Visual Hierarchy and Layout Design</h3>
-                        <p>Lesson 02</p>
+                        <h3 role="heading" aria-level="3" itemprop="headline">Creating Low-Fidelity Wireframes</h3>
+                        <p itemprop="position">Lesson 02</p>
                     </div>
                     
-                    <button class="time-btn">
-                        <img src="/images/clock.svg" alt="Clock">
-                        <p>1 hour</p>
+                    <button class="time-btn" aria-label="Duration: 1 hour" role="button">
+                        <img src="/images/clock.svg" alt="Clock" role="image" itemprop="image">
+                        <p itemprop="timeRequired">1 hour</p>
                     </button>
                     
                 </div>
 
-                <div class="info-card"> 
+                <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                     
                     <div class="info-crd-content">
-                        <h3>Creating a Strong Brand Identity</h3>
-                        <p>Lesson 03</p>
+                        <h3 role="heading" aria-level="3" itemprop="headline">Prototyping and Interactive Mockups</h3>
+                        <p itemprop="position">Lesson 03</p>
                     </div>
                     
-                    <button class="time-btn">
-                        <img src="/images/clock.svg" alt="Clock">
-                        <p>45 Minutes</p>
+                    <button class="time-btn" aria-label="Duration: 1 hour" role="button">
+                        <img src="/images/clock.svg" alt="Clock" role="image" itemprop="image">
+                        <p itemprop="timeRequired">1 hour</p>
                     </button>
                     
                 </div>
             </section>
 
-            <section class="large-info-card">
+            <section class="large-info-card" role="region" aria-labelledby="section-title" itemscope itemtype="https://schema.org/ItemList">
                 
-                <h2>05</h2>
-                <h3 class="info-sub-header">Usability Testing and Iteration</h3>
+                <h2 id="section-title" role="heading" aria-level="2" itemprop="headline">04</h2>
+                <h3 class="info-sub-header" role="heading" aria-level="3" itemprop="headline">Visual Design and Branding</h3>
                 
-                <div class="info-card"> 
+                <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                     
                     <div class="info-crd-content">
-                        <h3>Usability Testing Methods and Techniques</h3>
-                        <p>Lesson 01</p>
+                        <h3 role="heading" aria-level="3" itemprop="headline">Color Theory and Typography in UI Design</h3>
+                        <p itemprop="position">Lesson 01</p>
                     </div>
                     
-                    <button class="time-btn">
-                        <img src="/images/clock.svg" alt="Clock">
-                        <p>1 hour</p>
+                    <button class="time-btn" aria-label="Duration: 1 hour" role="button">
+                        <img src="/images/clock.svg" alt="Clock" role="image" itemprop="image">
+                        <p itemprop="timeRequired">1 hour</p>
                     </button>
                     
                 </div>
 
-                <div class="info-card"> 
+                <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                     
                     <div class="info-crd-content">
-                        <h3>Analyzing Usability Test Results</h3>
-                        <p>Lesson 02</p>
+                        <h3 role="heading" aria-level="3" itemprop="headline">Visual Hierarchy and Layout Design</h3>
+                        <p itemprop="position">Lesson 02</p>
                     </div>
                     
-                    <button class="time-btn">
-                        <img src="/images/clock.svg" alt="Clock">
-                        <p>45 Minutes</p>
+                    <button class="time-btn" aria-label="Duration: 1 hour" role="button">
+                        <img src="/images/clock.svg" alt="Clock" role="image" itemprop="image">
+                        <p itemprop="timeRequired">1 hour</p>
                     </button>
                     
                 </div>
 
-                <div class="info-card"> 
+                <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                     
                     <div class="info-crd-content">
-                        <h3>Iterating and Improving UX Designs</h3>
-                        <p>Lesson 03</p>
+                        <h3 role="heading" aria-level="3" itemprop="headline">Creating a Strong Brand Identity</h3>
+                        <p itemprop="position">Lesson 03</p>
                     </div>
                     
-                    <button class="time-btn">
-                        <img src="/images/clock.svg" alt="Clock">
-                        <p>45 Minutes</p>
+                    <button class="time-btn" aria-label="Duration: 45 Minutes" role="button">
+                        <img src="/images/clock.svg" alt="Clock" role="image" itemprop="image">
+                        <p itemprop="timeRequired">45 Minutes</p>
+                    </button>
+                    
+                </div>
+            </section>
+
+            <section class="large-info-card" role="region" aria-labelledby="section-title" itemscope itemtype="https://schema.org/ItemList">
+                
+                <h2 id="section-title" role="heading" aria-level="2" itemprop="headline">05</h2>
+                <h3 class="info-sub-header" role="heading" aria-level="3" itemprop="headline">Usability Testing and Iteration</h3>
+                
+                <div class="info-card" role="article"> 
+                    
+                    <div class="info-crd-content">
+                        <h3 role="heading" aria-level="3" itemprop="headline">Usability Testing Methods and Techniques</h3>
+                        <p itemprop="position">Lesson 01</p>
+                    </div>
+                    
+                    <button class="time-btn" aria-label="Duration: 1 hour" role="button">
+                        <img src="/images/clock.svg" alt="Clock" role="image" itemprop="image">
+                        <p itemprop="timeRequired">1 hour</p>
+                    </button>
+                    
+                </div>
+
+                <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
+                    
+                    <div class="info-crd-content">
+                        <h3 role="heading" aria-level="3" itemprop="headline">Analyzing Usability Test Results</h3>
+                        <p itemprop="position">Lesson 02</p>
+                    </div>
+                    
+                    <button class="time-btn" aria-label="Duration: 45 Minutes" role="button">
+                        <img src="/images/clock.svg" alt="Clock" role="image" itemprop="image">
+                        <p itemprop="timeRequired">45 Minutes</p>
+                    </button>
+                    
+                </div>
+
+                <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
+                    
+                    <div class="info-crd-content">
+                        <h3 role="heading" aria-level="3" itemprop="headline">Iterating and Improving UX Designs</h3>
+                        <p itemprop="position">Lesson 03</p>
+                    </div>
+                    
+                    <button class="time-btn" aria-label="Duration: 45 Minutes" role="button">
+                        <img src="/images/clock.svg" alt="Clock" role="image" itemprop="image">
+                        <p itemprop="timeRequired">45 Minutes</p>
                     </button>
                     
                 </div>
@@ -285,59 +285,59 @@
         </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo" itemscope itemtype="https://schema.org/Organization">
         <div class="container">
-            <img src="images/logo.svg" class="footer-logo" alt="Company Logo">
-            <ul>
-                <li class="footer-flex-display">
-                    <img src="images/letter.svg" alt="Letter icon">
+            <img src="images/logo.svg" class="footer-logo" role="img" alt="Company Logo" itemprop="logo">
+            <ul role="list" aria-label="Contact Information">
+                <li class="footer-flex-display" role="listitem" itemscope itemprop="contactPoint" itemtype="https://schema.org/ContactPoint">
+                    <img src="images/letter.svg" role="img" alt="Letter icon" itemprop="image">
                     <p>hello@skillbridge.com</p>
                 </li>
-                <li class="footer-flex-display">
-                    <img src="images/phone.svg" alt="Phone icon">
-                    <p>+91 91813 23 2309</p>
+                <li class="footer-flex-display" role="listitem" itemscope itemprop="contactPoint" itemtype="https://schema.org/ContactPoint"> 
+                    <img src="images/phone.svg" role="img" alt="Phone icon" itemprop="image">
+                    <p><a href="tel:+9191813232309" itemprop="telephone">+91 91813 23 2309</p>
                 </li>
-                <li class="footer-flex-display">
-                    <img src="images/pin.svg" alt="Pin icon">
-                    <p>Ottawa, ON</p>
+                <li class="footer-flex-display" role="listitem" itemscope itemprop="address" itemtype="https://schema.org/PostalAddress">
+                    <img src="images/pin.svg" role="img" alt="Pin icon" itemprop="image">
+                    <p itemprop="streetAddress">Ottawa, ON</p>
                 </li>
             </ul>
             
             <div class="footer-grid-layout">
                 <div class="grid-item">
-                    <h2>Home</h2>
-                    <ul class="home-and-about-list">
-                        <li><a href="#benefits">Benefits</a></li>
-                        <li><a href="#courses">Our Courses</a></li>
-                        <li><a href="#testimonials">Our Testimonials</a></li>
-                        <li><a href="#faq">Our FAQ</a></li>
+                    <h2 role="heading" aria-level="2" itemprop="headline">Home</h2>
+                    <ul class="home-and-about-list" role="list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits">Benefits</a><meta itemprop="position" content="1"></li>
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#courses">Our Courses</a><meta itemprop="position" content="2"></li>
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#testimonials">Our Testimonials</a><meta itemprop="position" content="3"></li>
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#faq">Our FAQ</a><meta itemprop="position" content="4"></li>
                     </ul>
                 </div>
                 
                 <div class="grid-item">
-                    <h2>About Us</h2>
-                    <ul class="home-and-about-list">
-                        <li><a href="#benefits">Company</a></li>
-                        <li><a href="#courses">Achievements</a></li>
-                        <li><a href="#testimonials">Our Goals</a></li>
+                    <h2 role="heading" aria-level="2" itemprop="headline">About Us</h2>
+                    <ul class="home-and-about-list" role="list" itemscope itemtype="https://schema.org/ItemList">
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits" itemprop="item" itemscope itemtype="https://schema.org/Thing">Company</a><meta itemprop="position" content="1"></li>
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#courses" itemprop="item" itemscope itemtype="https://schema.org/Thing">Achievements</a><meta itemprop="position" content="2"></li>
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#testimonials" itemprop="item" itemscope itemtype="https://schema.org/Thing">Our Goals</a><meta itemprop="position" content="3"></li>
                     </ul>
                 </div>
             </div>
             
-            <h2 class="social-profiles">Social Profiles</h2>
-            <ul class="social-profiles-flex">
-                <li>
-                    <img src="images/facebook.svg" alt="Facebook logo">
+            <h2 class="social-profiles" role="heading" aria-level="2" itemprop="headline">Social Profiles</h2>
+            <ul class="social-profiles-flex" role="list" aria-label="Social Media Links" itemscope itemprop="sameAs" itemtype="https://schema.org/URL">
+                <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits" itemprop="item" itemscope itemtype="https://schema.org/Thing">
+                    <img src="images/facebook.svg" role="img" alt="Facebook logo" itemprop="image">
                 </li>
-                <li>
-                    <img src="images/twitter.svg" alt="Twitter logo">
+                <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits" itemprop="item" itemscope itemtype="https://schema.org/Thing">
+                    <img src="images/twitter.svg" role="img" alt="Twitter logo" itemprop="image">
                 </li>
-                <li>
-                    <img src="images/linkedin.svg" alt="LinkedIn logo">
+                <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits" itemprop="item" itemscope itemtype="https://schema.org/Thing">
+                    <img src="images/linkedin.svg" role="img" alt="LinkedIn logo" itemprop="image">
                 </li>
             </ul>
 
-            <p class="copyright-line">&copy; 2025 Skillbridge. All rights reserved.</p>
+            <p class="copyright-line" itemscope itemtype="https://schema.org/CreativeWork">&copy; 2025 Skillbridge. All rights reserved.</p>
         </div>
     </footer>
 </body>

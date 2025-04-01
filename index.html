@@ -6,78 +6,79 @@
     <link rel="stylesheet" href="./css/home.css">
     <title>eldr0025 Midterm</title>
 </head>
-<body>
-    <header role="banner">
+<body itemscope itemtype="https://schema.org/WebPage">
+    <header role="banner" itemscope itemtype="https://schema.org/WPHeader">
         
         <!-- Free Courses Banner -->
-        <div class="free-courses-banner" role="status" aria-live="polite">
-            <p>Free Courses 🌟 Sale Ends Soon, Get It Now ➔</p>
+        <div class="free-courses-banner" role="status" aria-live="polite" itemscope itemtype="https://schema.org/SpecialAnnouncement">
+            <p itemprop="text">Free Courses 🌟 Sale Ends Soon, Get It Now ➔</p>
         </div>
 
-        <img src="/images/logo.svg" alt="Company logo">
+        <img src="/images/logo.svg" alt="Company logo" itemprop="logo">
 
         <!-- Navigation Bar -->
         <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <ul class="nav-list" role="list">
-              <li><a href="#" class="current" itemprop="url" role="link"><span itemprop="name">Home</span></a></li>
-              <li><a href="./courses-open.html" itemprop="url" role="link"><span itemprop="name">Courses</span></a></li>
-              <li><a href="#" itemprop="url" role="link"><span itemprop="name">About Us</span></a></li>
-              <li><a href="./pricing.html" itemprop="url" role="link"><span itemprop="name">Pricing</span></a></li>
-              <li><a href="#" itemprop="url" role="link"><span itemprop="name">Contact</span></a></li>
+              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" class="current" itemprop="url" role="link"><span itemprop="name">Home</span></a></li>
+              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./courses-open.html" itemprop="url" role="link"><span itemprop="name">Courses</span></a></li>
+              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">About Us</span></a></li>
+              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./pricing.html" itemprop="url" role="link"><span itemprop="name">Pricing</span></a></li>
+              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">Contact</span></a></li>
             </ul>
 
             <!-- Navigation Links -->
             <div class="nav-btns">
-                <a href="#" class="signup" role="button" aria-label="Sign Up for an Account">Sign Up</a>
-                <a href="#" class="login" role="button" aria-label="Log in to Your Account">Login</a>
+                <a href="#" class="signup" role="button" aria-label="Sign Up for an Account" itemscope itemtype="https://schema.org/Action">Sign Up</a>
+                <a href="#" class="login" role="button" aria-label="Log in to Your Account" itemscope itemtype="https://schema.org/Action">Login</a>
             </div>
         </nav>
         
     </header>
 
-    <main role="main">
+    <main role="main" itemscope itemtype="https://schema.org/WebPageElement">
         <div class="container">
             <!-- Header -->
-            <section class="header" role="region" aria-labelledby="unlock-title">
+            <section class="header" role="region" aria-labelledby="unlock-title" itemscope itemtype="https://schema.org/AboutPage">
                 <div class="unlock-potential">
-                    <img src="/images/bolt.svg" role="img" alt="Lightning bolt representing creativity">
-                    <h1 id="unlock-title" role="heading" aria-level="1"><strong>Unlock</strong> Your Creative Potential</h1>
+                    <img src="/images/bolt.svg" role="img" alt="Lightning bolt representing creativity" itemprop="image">
+                    <h1 id="unlock-title" role="heading" aria-level="1" itemprop="headline"><strong>Unlock</strong> Your Creative Potential</h1>
                 </div>
-                <h2 role="heading" aria-level="2">with Online Design and Development Courses.</h2>
-                <p>Learn from Industry Experts and Enchance Your Skills.<p>
+                <h2 role="heading" aria-level="2" itemprop="description">with Online Design and Development Courses.</h2>
+                <p itemprop="text">Learn from Industry Experts and Enchance Your Skills.<p>
                 <div class="header-buttons">
                     <div>
-                        <button class="explore-btn" role="button">
-                            <span>Explore Courses</span>
+                        <button class="explore-btn" role="button" itemscope itemtype="https://schema.org/Action">
+                            <span itemprop="name">Explore Courses</span>
                         </button>
                     </div>
                     <div>
-                        <button class="view-pricing-btn" role="button">
-                            <span>View Pricing</span>
+                        <button class="view-pricing-btn" role="button" itemscope itemtype="https://schema.org/Action">
+                            <span itemprop="name">View Pricing</span>
                         </button>
                     </div>
                 </div>
             </section>
 
             <!-- Collaborators -->
-            <div class="collabs">
-                <img src="images/zapier.svg" class="zapier" role="img" alt="Zapier Logo">
-                <img src="images/spotify.svg" class="spotify" role="img" alt="Spotify Logo">
-                <img src="images/zoom.svg" class="zoom" role="img" alt="Zoom Logo">
-                <img src="images/amazon.svg" class="amazon" role="img" alt="Amazon Logo">
-                <img src="images/adobe.svg" class="adobe" role="img" alt="Adobe Logo">
-                <img src="images/notion.svg" class="notion"  role="img" alt="Notion Logo">
-                <img src="images/netflix.svg" class="netflix" role="img" alt="Netflix Logo">
+            <div class="collabs" role="group" aria-labelledby="collab-title" itemscope itemtype="https://schema.org/Organization">
+                <img src="images/zapier.svg" class="zapier" role="img" alt="Zapier Logo" itemprop="logo">
+                <img src="images/spotify.svg" class="spotify" role="img" alt="Spotify Logo" itemprop="logo">
+                <img src="images/zoom.svg" class="zoom" role="img" alt="Zoom Logo" itemprop="logo">
+                <img src="images/amazon.svg" class="amazon" role="img" alt="Amazon Logo" itemprop="logo">
+                <img src="images/adobe.svg" class="adobe" role="img" alt="Adobe Logo" itemprop="logo">
+                <img src="images/notion.svg" class="notion"  role="img" alt="Notion Logo" itemprop="logo">
+                <img src="images/netflix.svg" class="netflix" role="img" alt="Netflix Logo" itemprop="logo">
             </div>
 
             <!-- Hero Banner -->
-            <img src="images/container.png" class="hero-banner" role="img" alt="Hero Banner of people talking in a colorful setting">
+            <img src="images/container.png" class="hero-banner" role="img" alt="Hero Banner of people talking in a colorful setting" itemscope itemtype="https://schema.org/ImageObject"
+            itemprop="contentUrl">
 
             <!-- Benefits -->
-            <section class="benefits-section" role="region" aria-labelledby="benefits-title">
+            <section class="benefits-section" role="region" aria-labelledby="benefits-title" itemscope itemtype="https://schema.org/Service">
                 <div class="container">
-                    <h2 id="benefits-title" role="heading" aria-level="1">Benefits</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                    <h2 id="benefits-title" role="heading" aria-level="1" itemprop="headline">Benefits</h2>
+                    <p itemprop="description">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                     <div>
                         <button class="view-all-btn" role="button" aria-label="View all benefits">
                             <p>View All</p>
@@ -87,86 +88,86 @@
                     <!-- Benefits Cards -->
 
                     <!-- I used div class with the same "benefits-card" name through each service card so that I can easily apply the same styles to everything in this section -->
-                    <div class="benefits-card" role="article" aria-labelledby="benefit-01"> 
-                        <h2 role="heading" aria-level="2">01</h2>
+                    <div class="benefits-card" role="article" aria-labelledby="benefit-01" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
+                        <h2 role="heading" aria-level="2" itemprop="headline">01</h2>
                         
                         <div class="benefits-crd-content">
-                            <h3 id="benefit-01" role="heading" aria-level="3">Flexible Learning Schedule</h3>
-                            <p>Fit your coursework around your existing commitments and obligations.</p>
+                            <h3 id="benefit-01" role="heading" aria-level="3" itemprop="headline">Flexible Learning Schedule</h3>
+                            <p itemprop="description">Fit your coursework around your existing commitments and obligations.</p>
                         </div>
                         
                         <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
-                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow">
+                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
                         </button>
                         
                     </div>
 
-                    <div class="benefits-card" role="article" aria-labelledby="benefit-02"> 
-                        <h2 role="heading" aria-level="2">02</h2>
+                    <div class="benefits-card" role="article" aria-labelledby="benefit-02" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
+                        <h2 role="heading" aria-level="2" itemprop="headline">02</h2>
                         
                         <div class="benefits-crd-content">
-                            <h3 id="benefit-02" role="heading" aria-level="3">Expert Instruction</h3>
-                            <p>Learn from industry experts who have hands-on experience in design and development.</p>
+                            <h3 id="benefit-02" role="heading" aria-level="3" itemprop="headline">Expert Instruction</h3>
+                            <p itemprop="description">Learn from industry experts who have hands-on experience in design and development.</p>
                         </div>
                         
                         <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
-                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow">
+                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
                         </button>
                         
                     </div>
 
-                    <div class="benefits-card" role="article" aria-labelledby="benefit-03"> 
-                        <h2 role="heading" aria-level="2">03</h2>
+                    <div class="benefits-card" role="article" aria-labelledby="benefit-03" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
+                        <h2 role="heading" aria-level="2" itemprop="headline">03</h2>
                         
                         <div class="benefits-crd-content">
-                            <h3 id="benefit-03" role="heading" aria-level="3">Diverse Course Offerings</h3>
-                            <p>Explore a wide range of design and development courses covering various topics.</p>
+                            <h3 id="benefit-03" role="heading" aria-level="3" itemprop="headline">Diverse Course Offerings</h3>
+                            <p itemprop="description">Explore a wide range of design and development courses covering various topics.</p>
                         </div>
                         
                         <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
-                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow">
+                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
                         </button>
             
                     </div>
 
-                    <div class="benefits-card" role="article" aria-labelledby="benefit-04"> 
-                        <h2 role="heading" aria-level="2">04</h2>
+                    <div class="benefits-card" role="article" aria-labelledby="benefit-04" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
+                        <h2 role="heading" aria-level="2" itemprop="headline">04</h2>
                         
                         <div class="benefits-crd-content">
-                        <h3 id="benefit-04" role="heading" aria-level="3">Updated Curriculum</h3>
-                        <p>Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
+                        <h3 id="benefit-04" role="heading" aria-level="3" itemprop="headline">Updated Curriculum</h3>
+                        <p itemprop="description">Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
                         </div>
                         
                         <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
-                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow">
+                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
                         </button>
 
                     </div>
 
-                    <div class="benefits-card" role="article" aria-labelledby="benefit-05"> 
-                        <h2 role="heading" aria-level="2">05</h2>
+                    <div class="benefits-card" role="article" aria-labelledby="benefit-05" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
+                        <h2 role="heading" aria-level="2" itemprop="headline">05</h2>
                         
                         <div class="benefits-crd-content">
-                            <h3 id="benefit-05" role="heading" aria-level="3">Practical Projects and Assignments</h3>
-                            <p>Develop a portfolio showcasing your skills and abilities to potential employers.</p>
+                            <h3 id="benefit-05" role="heading" aria-level="3" itemprop="headline">Practical Projects and Assignments</h3>
+                            <p itemprop="description">Develop a portfolio showcasing your skills and abilities to potential employers.</p>
                         </div>
                       
                         <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
-                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow">
+                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
                         </button>
                 
                     </div>
 
-                    <div class="benefits-card" role="article" aria-labelledby="benefit-06"> 
-                        <h2 role="heading" aria-level="2">06</h2>
+                    <div class="benefits-card" role="article" aria-labelledby="benefit-06" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
+                        <h2 role="heading" aria-level="2" itemprop="headline">06</h2>
                         
                         <div class="benefits-crd-content">
-                            <h3 id="benefit-06" role="heading" aria-level="3">Interactive Learning Environment</h3>
-                            <p>Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.</p>
+                            <h3 id="benefit-06" role="heading" aria-level="3" itemprop="headline">Interactive Learning Environment</h3>
+                            <p itemprop="description">Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.</p>
                         </div>
 
                         <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
-                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow">
+                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
                         </button>
 
                     </div>
@@ -187,14 +188,14 @@
                     <!-- Courses Cards -->
 
                     <!-- I used div class with the same "courses-card" name through each service card so that I can easily apply the same styles to everything in this section -->
-                    <div class="courses-card" role="article" aria-labelledby="course-1">
+                    <div class="courses-card" role="article" aria-labelledby="course-1" itemscope itemtype="https://schema.org/Course">
                         
-                        <img src="images/course-card-1.png" class="course-img" role="img" alt="Person writing on sticky note">
+                        <img src="images/course-card-1.png" class="course-img" role="img" alt="Person writing on sticky note" itemprop="image">
                         
                         
                         <div class="course-card-btns">
                             <div>
-                                <button class="course-card-info-btn" role="button">
+                                <button class="course-card-info-btn" role="button" itemprop="duration">
                                     <p>4 Weeks</p>
                                 </button>
                             </div>
@@ -205,10 +206,10 @@
                             </div>
                         </div>
                         
-                        <p>By John Smith</p>
+                        <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By John Smith</p>
                         
-                        <h3 id="course-1" role="heading" aria-level="3">Web Design Fundamentals</h3>
-                        <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
+                        <h3 id="course-1" role="heading" aria-level="3" itemprop="headline">Web Design Fundamentals</h3>
+                        <p itemprop="description">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
                         <div>
                             <button class="get-it-now-btn" role="button">
                                 <p>Get it Now</p>
@@ -216,14 +217,14 @@
                         </div>
                     </div>
 
-                    <div class="courses-card" role="article" aria-labelledby="course-2">
+                    <div class="courses-card" role="article" aria-labelledby="course-2" itemscope itemtype="https://schema.org/Course">
                         
-                        <img src="images/course-card-2.png" class="course-img" role="img" alt="Person typing on a keyboard in front of a computer">
+                        <img src="images/course-card-2.png" class="course-img" role="img" alt="Person typing on a keyboard in front of a computer" itemprop="image">
                         
                         
                         <div class="course-card-btns">
                             <div>
-                                <button class="course-card-info-btn" role="button">
+                                <button class="course-card-info-btn" role="button" itemprop="duration">
                                     <p>6 Weeks</p>
                                 </button>
                             </div>
@@ -234,10 +235,10 @@
                             </div>
                         </div>
 
-                        <p>By Emily Johnson</p>
+                        <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By Emily Johnson</p>
                         
-                        <h3 id="course-2" role="heading" aria-level="3">UI/UX Design</h3>
-                        <p>Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
+                        <h3 id="course-2" role="heading" aria-level="3" itemprop="headline">UI/UX Design</h3>
+                        <p itemprop="description">Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
                         <div>
                             <button class="get-it-now-btn" role="button">
                                 <p>Get it Now</p>
@@ -245,14 +246,14 @@
                         </div>
                     </div>
 
-                    <div class="courses-card" role="article" aria-labelledby="course-3">
+                    <div class="courses-card" role="article" aria-labelledby="course-3" itemscope itemtype="https://schema.org/Course">
                         
-                        <img src="images/course-card-3.png" class="course-img" role="img" alt="Person looking at phone with book and glasses on table in front of them">
+                        <img src="images/course-card-3.png" class="course-img" role="img" alt="Person looking at phone with book and glasses on table in front of them" itemprop="image">
                         
                         
                         <div class="course-card-btns">
                             <div>
-                                <button class="course-card-info-btn" role="button">
+                                <button class="course-card-info-btn" role="button" itemprop="duration">
                                     <p>8 Weeks</p>
                                 </button>
                             </div>
@@ -263,10 +264,10 @@
                             </div>
                         </div>
 
-                        <p>By David Brown</p>
+                        <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By David Brown</p>
                         
-                        <h3 id="course-3" role="heading" aria-level="3">Mobile App Development</h3>
-                        <p>Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
+                        <h3 id="course-3" role="heading" aria-level="3" itemprop="headline">Mobile App Development</h3>
+                        <p itemprop="description">Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
                         <div>
                             <button class="get-it-now-btn" role="button">
                                 <p>Get it Now</p>
@@ -274,14 +275,14 @@
                         </div>
                     </div>
 
-                    <div class="courses-card" role="article" aria-labelledby="course-4">
+                    <div class="courses-card" role="article" aria-labelledby="course-4" itemscope itemtype="https://schema.org/Course">
                         
-                        <img src="images/course-card-4.png" class="course-img" role="img" alt="Person fanning out paint color cards over a desk with keyboard and coffee">
+                        <img src="images/course-card-4.png" class="course-img" role="img" alt="Person fanning out paint color cards over a desk with keyboard and coffee" itemprop="image">
                         
                         
                         <div class="course-card-btns">
                             <div>
-                                <button class="course-card-info-btn" role="button">
+                                <button class="course-card-info-btn" role="button" itemprop="duration">
                                     <p>10 Weeks</p>
                                 </button>
                             </div>
@@ -292,10 +293,10 @@
                             </div>
                         </div>
 
-                        <p>By Sarah Thompson</p>
+                        <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By Sarah Thompson</p>
                         
-                        <h3 id="course-4" role="heading" aria-level="3">Graphic Design for Beginners</h3>
-                        <p>Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
+                        <h3 id="course-4" role="heading" aria-level="3" itemprop="headline">Graphic Design for Beginners</h3>
+                        <p itemprop="description">Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
                         <div>
                             <button class="get-it-now-btn" role="button">
                                 <p>Get it Now</p>
@@ -303,14 +304,14 @@
                         </div>
                     </div>
 
-                    <div class="courses-card" role="article" aria-labelledby="course-5">
+                    <div class="courses-card" role="article" aria-labelledby="course-5" itemscope itemtype="https://schema.org/Course">
                             
-                        <img src="images/course-card-5.png" class="course-img" role="img" alt="Person looking at laptop screen">
+                        <img src="images/course-card-5.png" class="course-img" role="img" alt="Person looking at laptop screen" itemprop="image">
                         
                         
                         <div class="course-card-btns">
                             <div>
-                                <button class="course-card-info-btn" role="button">
+                                <button class="course-card-info-btn" role="button" itemprop="duration">
                                     <p>10 Weeks</p>
                                 </button>
                             </div>
@@ -321,10 +322,10 @@
                             </div>
                         </div>
 
-                        <p>By Michael Adams</p>
+                        <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By Michael Adams</p>
                         
-                        <h3 id="course-5" role="heading" aria-level="3">Front-End Web Development</h3>
-                        <p>Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
+                        <h3 id="course-5" role="heading" aria-level="3" itemprop="headline">Front-End Web Development</h3>
+                        <p itemprop="description">Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
                         <div>
                             <button class="get-it-now-btn" role="button">
                                 <p>Get it Now</p>
@@ -332,14 +333,14 @@
                         </div>
                     </div>
 
-                    <div class="courses-card" role="article" aria-labelledby="course-6">
+                    <div class="courses-card" role="article" aria-labelledby="course-6" itemscope itemtype="https://schema.org/Course">
                         
-                        <img src="images/course-card-6.png" class="course-img" role="img" alt="Person smiling while typing on keyboard">
+                        <img src="images/course-card-6.png" class="course-img" role="img" alt="Person smiling while typing on keyboard" itemprop="image">
                     
                         
                         <div class="course-card-btns">
                             <div>
-                                <button class="course-card-info-btn" role="button">
+                                <button class="course-card-info-btn" role="button" itemprop="duration">
                                     <p>6 Weeks</p>
                                 </button>
                             </div>
@@ -350,10 +351,10 @@
                             </div>
                         </div>
 
-                        <p>By Jennifer Wilson</p>
+                        <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By Jennifer Wilson</p>
                         
-                        <h3 id="course-6" role="heading" aria-level="3">Advanced JavaScript</h3>
-                        <p>Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.</p>
+                        <h3 id="course-6" role="heading" aria-level="3" itemprop="headline">Advanced JavaScript</h3>
+                        <p itemprop="description">Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.</p>
                         <div>
                             <button class="get-it-now-btn" role="button">
                                 <p>Get it Now</p>
@@ -364,9 +365,9 @@
             </section>
 
             <!-- Our Testimonials -->
-            <section class="testimonials-section" role="region" aria-labelledby="testimonials-title">
+            <section class="testimonials-section" role="region" aria-labelledby="testimonials-title" itemscope itemtype="https://schema.org/Review">
                 <div class="container">
-                    <h2 id="testimonials-title" id="course-5" role="heading" aria-level="2">Our Testimonials</h2>
+                    <h2 id="testimonials-title" role="heading" aria-level="2">Our Testimonials</h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                     <div>
                         <button class="view-all-btn" role="button" aria-label="View all testimonials">
@@ -377,36 +378,16 @@
                     <!-- Testimonials Cards -->
 
                     <!-- I used div class with the same "testimonials-card" name through each service card so that I can easily apply the same styles to everything in this section -->
-                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-sarah">
+                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-sarah" itemscope itemtype="https://schema.org/Review">
                         
-                        <p>The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
+                        <p itemprop="reviewBody">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
                         
                         <div class="user-line user-line-background">
                             
-                            <img src="images/testimonials-pfp.png" role="img" alt="Headshot for a profile picture">
+                            <img src="images/testimonials-pfp.png" role="img" alt="Headshot for a profile picture" itemprop="image">
                             
 
-                            <p id="testimonial-sarah">Sarah L</p>
-                            
-                            <div>
-                                <button class="get-it-now-btn" role="button">
-                                    <p>Read Full Story</p>
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-jason">
-                        
-                        <p>The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
-                        
-                        <div class="user-line">
-                            <div class="testimonials-img">
-                                <img src="images/jason-m.png" role="img" alt="Headshot for a profile picture">
-                            </div>
-                        
-                            <p id="testimonial-jason">Jason M</p>
+                            <p id="testimonial-sarah" itemprop="author" itemscope itemtype="https://schema.org/Person">Sarah L</p>
                             
                             <div>
                                 <button class="get-it-now-btn" role="button">
@@ -417,16 +398,16 @@
 
                     </div>
 
-                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-emily">
+                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-jason" itemscope itemtype="https://schema.org/Review">
                         
-                        <p>The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
+                        <p itemprop="reviewBody">The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
                         
                         <div class="user-line">
                             <div class="testimonials-img">
-                                <img src="images/emily-r.png" role="img" alt="Headshot for a profile picture">
+                                <img src="images/jason-m.png" role="img" alt="Headshot for a profile picture" itemprop="image">
                             </div>
-
-                            <p id="testimonial-emily">Emily R</p>
+                        
+                            <p id="testimonial-jason" itemprop="author" itemscope itemtype="https://schema.org/Person">Jason M</p>
                             
                             <div>
                                 <button class="get-it-now-btn" role="button">
@@ -437,16 +418,36 @@
 
                     </div>
 
-                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-michael">
+                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-emily" itemscope itemtype="https://schema.org/Review">
                         
-                        <p>I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
+                        <p itemprop="reviewBody">The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
                         
                         <div class="user-line">
                             <div class="testimonials-img">
-                                <img src="images/michael-k.png" role="img" alt="Headshot for a profile picture">
+                                <img src="images/emily-r.png" role="img" alt="Headshot for a profile picture" itemprop="image">
                             </div>
 
-                            <p id="testimonial-michael">Michael K</p>
+                            <p id="testimonial-emily" itemprop="author" itemscope itemtype="https://schema.org/Person">Emily R</p>
+                            
+                            <div>
+                                <button class="get-it-now-btn" role="button">
+                                    <p>Read Full Story</p>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-michael" itemscope itemtype="https://schema.org/Review">
+                        
+                        <p itemprop="reviewBody">I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
+                        
+                        <div class="user-line">
+                            <div class="testimonials-img">
+                                <img src="images/michael-k.png" role="img" alt="Headshot for a profile picture" itemprop="image">
+                            </div>
+
+                            <p id="testimonial-michael" itemprop="author" itemscope itemtype="https://schema.org/Person">Michael K</p>
                             
                             <div>
                                 <button class="get-it-now-btn" role="button">
@@ -476,42 +477,42 @@
 
                     <!-- I used div class with the same "pricing-card" name through each service card so that I can easily apply the same styles to everything in this section -->
                     <div class="card-section">
-                        <div class="pricing-card" role="article" aria-labelledby="free-plan">
+                        <div class="pricing-card" role="article" aria-labelledby="free-plan" itemscope itemtype="https://schema.org/Product">
                             <div class="card-background">
                                 <div class="plan-text">
-                                    <h2 id="free-plan" role="heading" aria-level="2">Free Plan</h2>
+                                    <h2 id="free-plan" role="heading" aria-level="2" itemprop="headline">Free Plan</h2>
                                 </div>
-                                <h3 role="heading" aria-level="3">$0<strong>/month</strong></h3>
+                                <h3 role="heading" aria-level="3" itemprop="price">$0<strong>/month</strong></h3>
                                 <div class="white-background">
                                     
-                                        <h4 role="heading" aria-level="4">Available Features</h4>
-                                        <ul role="list">
-                                            <li role="listitem">
-                                                <img src="images/checkmark.svg" role="img" alt="checkmark">
+                                        <h4 role="heading" aria-level="4" itemprop="headline">Available Features</h4>
+                                        <ul role="list" itemscope itemtype="https://schema.org/Product">
+                                            <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                                <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
                                                 <p>Access to selected free courses.</p>
                                             </li>
-                                            <li role="listitem">
-                                                <img src="images/checkmark.svg" role="img" alt="checkmark">
+                                            <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                                <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
                                                 <p>Limited course materials and resources.</p>
                                             </li>
-                                            <li role="listitem">
-                                                <img src="images/checkmark.svg" role="img" alt="checkmark">
+                                            <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                                <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
                                                 <p>Basic community support.</p>
                                             </li>
-                                            <li role="listitem">
-                                                <img src="images/checkmark.svg" role="img" alt="checkmark">
+                                            <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                                <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
                                                 <p>No certification upon completion.</p>
                                             </li>
-                                            <li role="listitem">
-                                                <img src="images/checkmark.svg" role="img" alt="checkmark">
+                                            <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                                <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
                                                 <p>Ad-supported platform.</p>
                                             </li>
-                                            <li role="listitem">
-                                                <img src="images/x.svg" role="img" alt="x">
+                                            <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                                <img src="images/x.svg" role="img" alt="x" itemprop="image">
                                                 <p>Access to exclusive Pro Plan community forums.</p>
                                             </li>
-                                            <li role="listitem">
-                                                <img src="images/x.svg" role="img" alt="x">
+                                            <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                                <img src="images/x.svg" role="img" alt="x" itemprop="image">
                                                 <p>Early access to new courses and updates.</p>
                                             </li>
                                         </ul>
@@ -524,41 +525,41 @@
                             </div>
                         </div>
 
-                        <div class="pricing-card" role="article" aria-labelledby="free-plan">
+                        <div class="pricing-card" role="article" aria-labelledby="free-plan" itemscope itemtype="https://schema.org/Product">
                             <div class="card-background">
                                 <div class="plan-text">
-                                    <h2 id="pro-plan" role="heading" aria-level="2">Pro Plan</h2>
+                                    <h2 id="pro-plan" role="heading" aria-level="2" itemprop="headline">Pro Plan</h2>
                                 </div>
-                                <h3 role="heading" aria-level="3">$79<strong>/month</strong></h3>
+                                <h3 role="heading" aria-level="3" itemprop="price">$79<strong>/month</strong></h3>
                                 <div class="white-background">
-                                    <h4 role="heading" aria-level="4">Available Features</h4>
-                                    <ul role="list">
-                                        <li role="listitem">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark">
+                                    <h4 role="heading" aria-level="4" itemprop="headline">Available Features</h4>
+                                    <ul role="list" itemscope itemtype="https://schema.org/Product">
+                                        <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
                                             <p>Unlimited access to all courses.</p>
                                         </li>
-                                        <li role="listitem">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark">
+                                        <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
                                             <p>Unlimited course materials and resources.</p>
                                         </li>
-                                        <li role="listitem">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark">
+                                        <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
                                             <p>Priority support from instructors.</p>
                                         </li>
-                                        <li role="listitem">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark">
+                                        <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
                                             <p>Course completion certificates.</p>
                                         </li>
-                                        <li role="listitem">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark">
+                                        <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
                                             <p>Ad-free experience.</p>
                                         </li>
-                                        <li role="listitem">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark">
+                                        <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
                                             <p>Access to exclusive Pro Plan community forums.</p>
                                         </li>
-                                        <li role="listitem">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark">
+                                        <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
                                             <p>Early access to new courses and updates.</p>
                                         </li>
                                     </ul>
@@ -577,7 +578,7 @@
             </section>
 
             <!-- Frequently Asked Questions -->
-            <section class="faq-section" role="region" aria-labelledby="faq-header">
+            <section class="faq-section" role="region" aria-labelledby="faq-header" itemscope itemtype="https://schema.org/FAQPage">
                 <div class="container">
                     <h2 class="faq-header" id="faq-header" role="heading" aria-level="2">Frequently Asked Questions</h2>
                     <p class="faq-sub-header">Still you have any questions? Contact our</p>
@@ -590,38 +591,40 @@
 
                     <!-- FAQ Card -->
                     
-                    <div class="faq-large-card" role="article" aria-labelledby="frequently-asked-questions">
+                    <div class="faq-large-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                         <div class="q-and-a-flex">
-                            <h2 id="faq-question-1" role="heading" aria-level="2">Can I enroll in multiple courses at once?</h2>
-                            <img src="images/yellow-x.svg" role="img" alt="x">
+                            <h2 id="faq-question-1" role="heading" aria-level="2" itemprop="headline">Can I enroll in multiple courses at once?</h2>
+                            <img src="images/yellow-x.svg" role="img" alt="x" itemprop="image">
                         </div>
 
-                        <p id="faq-answer-1" hidden role="region" aria-live="polite">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p id="faq-answer-1" hidden role="region" aria-live="polite" itemprop="text">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                        </div>
 
                         <div class="enrollment-process-background">
-                            <h2 id="faq-question-2" role="heading" aria-level="2">Enrollment Process for Different Courses</h2>
-                            <img src="images/horiz-arrow.svg" role="img" alt="Horizontal arrow pointing from right to left">
+                            <h2 id="faq-question-2" role="heading" aria-level="2" itemprop="headline">Enrollment Process for Different Courses</h2>
+                            <img src="images/horiz-arrow.svg" role="img" alt="Horizontal arrow pointing from right to left" itemprop="image">
                         </div>
                     </div>
 
-                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions">
-                        <h2 id="faq-question-3" role="heading" aria-level="2">What kind of support can I expect from instructors</h2>
-                        <img src="images/plus.svg" role="img" alt="Plus symbol">
+                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 id="faq-question-3" role="heading" aria-level="2" itemprop="headline">What kind of support can I expect from instructors</h2>
+                        <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
                     </div>
 
-                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions">
-                        <h2 id="faq-question-4" role="heading" aria-level="2">Are the courses self-paced or do they have specific start and end dates?</h2>
-                        <img src="images/plus.svg" role="img" alt="Plus symbol">
+                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 id="faq-question-4" role="heading" aria-level="2" itemprop="headline">Are the courses self-paced or do they have specific start and end dates?</h2>
+                        <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
                     </div>
 
-                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions">
-                        <h2 id="faq-question-5" role="heading" aria-level="2">Are there any prerequisites for the courses?</h2>
-                        <img src="images/plus.svg" role="img" alt="Plus symbol">
+                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 id="faq-question-5" role="heading" aria-level="2" itemprop="headline">Are there any prerequisites for the courses?</h2>
+                        <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
                     </div>
 
-                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions">
-                        <h2 id="faq-question-6" role="heading" aria-level="2">Can I download the course materials for offline access?</h2>
-                        <img src="images/plus.svg" role="img" alt="Plus symbol">
+                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 id="faq-question-6" role="heading" aria-level="2" itemprop="headline">Can I download the course materials for offline access?</h2>
+                        <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
                     </div>
                 </div>
             </section>
@@ -629,59 +632,59 @@
     </main>
 
     <!-- Footer -->
-    <footer role="contentinfo">
+    <footer role="contentinfo" itemscope itemtype="https://schema.org/Organization">
         <div class="container">
-            <img src="images/logo.svg" class="footer-logo" role="img" alt="Company Logo">
+            <img src="images/logo.svg" class="footer-logo" role="img" alt="Company Logo" itemprop="logo">
             <ul role="list" aria-label="Contact Information">
-                <li class="footer-flex-display" role="listitem">
-                    <img src="images/letter.svg" role="img" alt="Letter icon">
+                <li class="footer-flex-display" role="listitem" itemscope itemprop="contactPoint" itemtype="https://schema.org/ContactPoint">
+                    <img src="images/letter.svg" role="img" alt="Letter icon" itemprop="image">
                     <p>hello@skillbridge.com</p>
                 </li>
-                <li class="footer-flex-display" role="listitem">
-                    <img src="images/phone.svg" role="img" alt="Phone icon">
-                    <p>+91 91813 23 2309</p>
+                <li class="footer-flex-display" role="listitem" itemscope itemprop="contactPoint" itemtype="https://schema.org/ContactPoint"> 
+                    <img src="images/phone.svg" role="img" alt="Phone icon" itemprop="image">
+                    <p><a href="tel:+9191813232309" itemprop="telephone">+91 91813 23 2309</p>
                 </li>
-                <li class="footer-flex-display" role="listitem">
-                    <img src="images/pin.svg" role="img" alt="Pin icon">
-                    <p>Ottawa, ON</p>
+                <li class="footer-flex-display" role="listitem" itemscope itemprop="address" itemtype="https://schema.org/PostalAddress">
+                    <img src="images/pin.svg" role="img" alt="Pin icon" itemprop="image">
+                    <p itemprop="streetAddress">Ottawa, ON</p>
                 </li>
             </ul>
             
             <div class="footer-grid-layout">
                 <div class="grid-item">
-                    <h2 role="heading" aria-level="2">Home</h2>
-                    <ul class="home-and-about-list" role="list">
-                        <li role="listitem"><a href="#benefits">Benefits</a></li>
-                        <li role="listitem"><a href="#courses">Our Courses</a></li>
-                        <li role="listitem"><a href="#testimonials">Our Testimonials</a></li>
-                        <li role="listitem"><a href="#faq">Our FAQ</a></li>
+                    <h2 role="heading" aria-level="2" itemprop="headline">Home</h2>
+                    <ul class="home-and-about-list" role="list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits">Benefits</a><meta itemprop="position" content="1"></li>
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#courses">Our Courses</a><meta itemprop="position" content="2"></li>
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#testimonials">Our Testimonials</a><meta itemprop="position" content="3"></li>
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#faq">Our FAQ</a><meta itemprop="position" content="4"></li>
                     </ul>
                 </div>
                 
                 <div class="grid-item">
-                    <h2 role="heading" aria-level="2">About Us</h2>
-                    <ul class="home-and-about-list" role="list">
-                        <li role="listitem"><a href="#benefits">Company</a></li>
-                        <li role="listitem"><a href="#courses">Achievements</a></li>
-                        <li role="listitem"><a href="#testimonials">Our Goals</a></li>
+                    <h2 role="heading" aria-level="2" itemprop="headline">About Us</h2>
+                    <ul class="home-and-about-list" role="list" itemscope itemtype="https://schema.org/ItemList">
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits" itemprop="item" itemscope itemtype="https://schema.org/Thing">Company</a><meta itemprop="position" content="1"></li>
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#courses" itemprop="item" itemscope itemtype="https://schema.org/Thing">Achievements</a><meta itemprop="position" content="2"></li>
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#testimonials" itemprop="item" itemscope itemtype="https://schema.org/Thing">Our Goals</a><meta itemprop="position" content="3"></li>
                     </ul>
                 </div>
             </div>
             
-            <h2 class="social-profiles" role="heading" aria-level="2">Social Profiles</h2>
-            <ul class="social-profiles-flex" role="list" aria-label="Social Media Links">
-                <li role="listitem">
-                    <img src="images/facebook.svg" role="img" alt="Facebook logo">
+            <h2 class="social-profiles" role="heading" aria-level="2" itemprop="headline">Social Profiles</h2>
+            <ul class="social-profiles-flex" role="list" aria-label="Social Media Links" itemscope itemprop="sameAs" itemtype="https://schema.org/URL">
+                <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits" itemprop="item" itemscope itemtype="https://schema.org/Thing">
+                    <img src="images/facebook.svg" role="img" alt="Facebook logo" itemprop="image">
                 </li>
-                <li role="listitem">
-                    <img src="images/twitter.svg" role="img" alt="Twitter logo">
+                <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits" itemprop="item" itemscope itemtype="https://schema.org/Thing">
+                    <img src="images/twitter.svg" role="img" alt="Twitter logo" itemprop="image">
                 </li>
-                <li role="listitem">
-                    <img src="images/linkedin.svg" role="img" alt="LinkedIn logo">
+                <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits" itemprop="item" itemscope itemtype="https://schema.org/Thing">
+                    <img src="images/linkedin.svg" role="img" alt="LinkedIn logo" itemprop="image">
                 </li>
             </ul>
 
-            <p class="copyright-line">&copy; 2025 Skillbridge. All rights reserved.</p>
+            <p class="copyright-line" itemscope itemtype="https://schema.org/CreativeWork">&copy; 2025 Skillbridge. All rights reserved.</p>
         </div>
     </footer>
 </body>
