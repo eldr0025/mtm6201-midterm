@@ -6,7 +6,41 @@
     <link rel="stylesheet" href="./css/home.css">
     <title>eldr0025 Midterm</title>
 </head>
+
 <body itemscope itemtype="https://schema.org/WebPage">
+
+    <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+        
+        <a href="#main" class="skip-link" role="link" aria-label="Skip to the main content of the page" itemprop="url">
+            <span itemprop="name">Skip to Main Content</span>
+        </a>
+
+        <a href="#benefits" class="skip-link" role="link" aria-label="Skip to the Benefits section" itemprop="url">
+            <span itemprop="name">Skip to Benefits</span>
+        </a>
+
+        <a href="#courses" class="skip-link" role="link" aria-label="Skip to the Courses section" itemprop="url">
+            <span itemprop="name">Skip to Courses</span>
+        </a>
+
+        <a href="#testimonials" class="skip-link" role="link" aria-label="Skip to the Testimonials section" itemprop="url">
+            <span itemprop="name">Skip to Testimonials</span>
+        </a>
+
+        <a href="#pricing" class="skip-link" role="link" aria-label="Skip to the Pricing section" itemprop="url">
+            <span itemprop="name">Skip to Pricing</span>
+        </a>
+
+        <a href="#faq" class="skip-link" role="link" aria-label="Skip to the FAQ section" itemprop="url">
+            <span itemprop="name">Skip to FAQ</span>
+        </a>  
+
+        <a href="#footer" class="skip-link" role="link" aria-label="Skip to the Footer of the page" itemprop="url">
+            <span itemprop="name">Skip to Footer</span>
+        </a>
+
+    </nav>
+    
     <header role="banner" itemscope itemtype="https://schema.org/WPHeader">
         
         <!-- Free Courses Banner -->
@@ -14,28 +48,30 @@
             <p itemprop="text">Free Courses 🌟 Sale Ends Soon, Get It Now ➔</p>
         </div>
 
-        <img src="/images/logo.svg" alt="Company logo" itemprop="logo">
+            <div class="nav-container">
+                <img src="/images/logo.svg" alt="Company logo" itemprop="logo">
 
-        <!-- Navigation Bar -->
-        <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-            <ul class="nav-list" role="list">
-              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" class="current" itemprop="url" role="link"><span itemprop="name">Home</span></a></li>
-              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./courses-open.html" itemprop="url" role="link"><span itemprop="name">Courses</span></a></li>
-              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">About Us</span></a></li>
-              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./pricing.html" itemprop="url" role="link"><span itemprop="name">Pricing</span></a></li>
-              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">Contact</span></a></li>
-            </ul>
+                <!-- Navigation Bar -->
+                <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <ul class="nav-list" role="list">
+                    <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" class="current" itemprop="url" role="link"><span itemprop="name">Home</span></a></li>
+                    <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./courses-open.html" itemprop="url" role="link"><span itemprop="name">Courses</span></a></li>
+                    <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">About Us</span></a></li>
+                    <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./pricing.html" itemprop="url" role="link"><span itemprop="name">Pricing</span></a></li>
+                    <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">Contact</span></a></li>
+                    </ul>
 
-            <!-- Navigation Links -->
-            <div class="nav-btns">
-                <a href="#" class="signup" role="button" aria-label="Sign Up for an Account" itemscope itemtype="https://schema.org/Action">Sign Up</a>
-                <a href="#" class="login" role="button" aria-label="Log in to Your Account" itemscope itemtype="https://schema.org/Action">Login</a>
+                <!-- Navigation Links -->
+                <div class="nav-btns">
+                    <a href="#" class="signup" role="button" aria-label="Sign Up for an Account" itemscope itemtype="https://schema.org/Action">Sign Up</a>
+                    <a href="#" class="login" role="button" aria-label="Log in to Your Account" itemscope itemtype="https://schema.org/Action">Login</a>
+                </div>
             </div>
         </nav>
         
     </header>
 
-    <main role="main" itemscope itemtype="https://schema.org/WebPageElement">
+    <main id="main" role="main" itemscope itemtype="https://schema.org/WebPageElement">
         <div class="container">
             <!-- Header -->
             <section class="header" role="region" aria-labelledby="unlock-title" itemscope itemtype="https://schema.org/AboutPage">
@@ -75,7 +111,7 @@
             itemprop="contentUrl">
 
             <!-- Benefits -->
-            <section class="benefits-section" role="region" aria-labelledby="benefits-title" itemscope itemtype="https://schema.org/Service">
+            <section class="benefits-section" id="benefits" role="region" aria-labelledby="benefits-title" itemscope itemtype="https://schema.org/Service">
                 <div class="container">
                     <h2 id="benefits-title" role="heading" aria-level="1" itemprop="headline">Benefits</h2>
                     <p itemprop="description">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
@@ -175,7 +211,7 @@
             </section>
 
             <!-- Our Courses -->
-            <section class="courses" role="region" aria-labelledby="courses-title">
+            <section class="courses" id="courses" role="region" aria-labelledby="courses-title">
                 <div class="container">
                     <h2 id="courses-title" role="heading" aria-level="2">Our Courses</h2>
                     <p class="courses-desc">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
@@ -365,7 +401,7 @@
             </section>
 
             <!-- Our Testimonials -->
-            <section class="testimonials-section" role="region" aria-labelledby="testimonials-title" itemscope itemtype="https://schema.org/Review">
+            <section class="testimonials-section" id="testimonials" role="region" aria-labelledby="testimonials-title" itemscope itemtype="https://schema.org/Review">
                 <div class="container">
                     <h2 id="testimonials-title" role="heading" aria-level="2">Our Testimonials</h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
@@ -395,7 +431,6 @@
                                 </button>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="testimonials-card" role="article" aria-labelledby="testimonial-jason" itemscope itemtype="https://schema.org/Review">
@@ -415,7 +450,6 @@
                                 </button>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="testimonials-card" role="article" aria-labelledby="testimonial-emily" itemscope itemtype="https://schema.org/Review">
@@ -435,7 +469,6 @@
                                 </button>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="testimonials-card" role="article" aria-labelledby="testimonial-michael" itemscope itemtype="https://schema.org/Review">
@@ -455,14 +488,13 @@
                                 </button>
                             </div>
                         </div>
-
                     </div>
                     
                 </div>
             </section>
 
             <!-- Our Pricing -->
-            <section class="pricing-section" role="region" aria-labelledby="pricing-title">
+            <section class="pricing-section" id="pricing" role="region" aria-labelledby="pricing-title">
                 <div class="container">
                     <h2 id="pricing-title" role="heading" aria-level="2">Our Pricing</h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
@@ -569,7 +601,6 @@
                                         </button>
                                     </div>
                                 </div>
-                            
                             </div>
                         </div>
                     </div>
@@ -578,7 +609,7 @@
             </section>
 
             <!-- Frequently Asked Questions -->
-            <section class="faq-section" role="region" aria-labelledby="faq-header" itemscope itemtype="https://schema.org/FAQPage">
+            <section class="faq-section" id="faq" role="region" aria-labelledby="faq-header" itemscope itemtype="https://schema.org/FAQPage">
                 <div class="container">
                     <h2 class="faq-header" id="faq-header" role="heading" aria-level="2">Frequently Asked Questions</h2>
                     <p class="faq-sub-header">Still you have any questions? Contact our</p>
@@ -632,7 +663,7 @@
     </main>
 
     <!-- Footer -->
-    <footer role="contentinfo" itemscope itemtype="https://schema.org/Organization">
+    <footer id="footer" role="contentinfo" itemscope itemtype="https://schema.org/Organization">
         <div class="container">
             <img src="images/logo.svg" class="footer-logo" role="img" alt="Company Logo" itemprop="logo">
             <ul role="list" aria-label="Contact Information">

@@ -2,6 +2,22 @@ body {
     background-color: #F7F7F8;
 }
 
+.skip-link {
+    position: absolute;
+    top: -50px; 
+    left: 10px;
+    background-color: #FF9500;
+    color: #FFFFFF;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.skip-link:focus {
+    top: 1px;
+}
+
 .free-courses-banner {
     background-color: #FF9500;
     color: #FFFFFF;

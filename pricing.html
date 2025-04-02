@@ -6,7 +6,25 @@
     <link rel="stylesheet" href="./css/pricing.css">
     <title>Skillbridge Pricing</title>
 </head>
+
 <body itemscope itemtype="https://schema.org/WebPage">
+
+    <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+        
+        <a href="#main" class="skip-link" role="link" aria-label="Skip to the main content of the page" itemprop="url">
+            <span itemprop="name">Skip to Main Content</span>
+        </a>
+
+        <a href="#faq" class="skip-link" role="link" aria-label="Skip to the footer content of the page" itemprop="url">
+            <span itemprop="name">Skip to FAQ</span>
+        </a>
+
+        <a href="#footer" class="skip-link" role="link" aria-label="Skip to the footer content of the page" itemprop="url">
+            <span itemprop="name">Skip to Footer</span>
+        </a>
+
+    </nav>
+    
     <header role="banner" itemscope itemtype="https://schema.org/WPHeader">
         
         <!-- Free Courses Banner -->
@@ -19,10 +37,10 @@
         <!-- Navigation Bar -->
         <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <ul class="nav-list" role="list">
-              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" class="current" itemprop="url" role="link"><span itemprop="name">Home</span></a></li>
+              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./index.html" itemprop="url" role="link"><span itemprop="name">Home</span></a></li>
               <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./courses-open.html" itemprop="url" role="link"><span itemprop="name">Courses</span></a></li>
               <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">About Us</span></a></li>
-              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./pricing.html" itemprop="url" role="link"><span itemprop="name">Pricing</span></a></li>
+              <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./pricing.html" class="current" itemprop="url" role="link"><span itemprop="name">Pricing</span></a></li>
               <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">Contact</span></a></li>
             </ul>
 
@@ -35,7 +53,7 @@
         
     </header>
 
-    <main role="main" itemscope itemtype="https://schema.org/WebPageElement">
+    <main id="main" role="main" itemscope itemtype="https://schema.org/WebPageElement">
         <div class="container">
             <section class="header">
                 <h1 role="heading" aria-level="1" itemprop="headline">Our Pricings</h1>
@@ -147,7 +165,7 @@
             </div>
         </div>
 
-        <section class="faq-section" role="region" aria-labelledby="faq-header" itemscope itemtype="https://schema.org/FAQPage">
+        <section class="faq-section" id="faq" role="region" aria-labelledby="faq-header" itemscope itemtype="https://schema.org/FAQPage">
             <div class="container">
                 <h2 class="faq-header" id="faq-header" role="heading" aria-level="2">Frequently Asked Questions</h2>
                 <p class="faq-sub-header">Still you have any questions? Contact our</p>
@@ -200,7 +218,7 @@
 
     </main>
 
-    <footer role="contentinfo" itemscope itemtype="https://schema.org/Organization">
+    <footer id="footer" role="contentinfo" itemscope itemtype="https://schema.org/Organization">
         <div class="container">
             <img src="images/logo.svg" class="footer-logo" role="img" alt="Company Logo" itemprop="logo">
             <ul role="list" aria-label="Contact Information">

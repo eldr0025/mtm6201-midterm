@@ -2,6 +2,22 @@ body {
     background-color: #F7F7F8;
 }
 
+.skip-link {
+    position: absolute;
+    top: -50px; 
+    left: 10px;
+    background-color: #FF9500;
+    color: #FFFFFF;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.skip-link:focus {
+    top: 1px;
+}
+
 .free-courses-banner {
     background-color: #FF9500;
     color: #FFFFFF;
@@ -174,6 +190,13 @@ h1 strong {
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.view-all-btn:hover {
+    transform: scale(0.8);
+    transition: transform 1s ease;
+    background-color: #FF9500;
+    color: #FFFFFF;
 }
 
 .view-all-btn p {
@@ -396,6 +419,18 @@ h1 strong {
     margin-left: 10px;
 }
 
+@keyframes textPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.7); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
 .get-started-btn {
     background-color: #FF9500;
     color: #FFFFFF;
@@ -409,6 +444,7 @@ h1 strong {
 
 .get-started-btn p {
     font-size: 18px;
+    animation: textPulse 1.1s infinite alternate ease-in-out;
 }
 
 .pricing-section {
@@ -596,4 +632,32 @@ footer ul li a {
     text-align: center;
     font-size: 17px;
     color: #656567;
+}
+
+
+/* Desktop */
+@media (min-width: 1300px) {
+    .free-courses-banner p {
+        font-size: 16px;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        margin-left: -100px;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+    }
+
+    .nav-list li {
+        margin-left: -40px;
+    }
+
+    .current {
+        padding: 10px;
+    }
 }
