@@ -54,11 +54,11 @@
                 <!-- Navigation Bar -->
                 <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                     <ul class="nav-list" role="list">
-                    <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" class="current" itemprop="url" role="link"><span itemprop="name">Home</span></a></li>
-                    <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./courses-open.html" itemprop="url" role="link"><span itemprop="name">Courses</span></a></li>
-                    <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">About Us</span></a></li>
-                    <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./pricing.html" itemprop="url" role="link"><span itemprop="name">Pricing</span></a></li>
-                    <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">Contact</span></a></li>
+                        <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" class="current" itemprop="url" role="link"><span itemprop="name">Home</span></a></li>
+                        <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./courses-open.html" itemprop="url" role="link"><span itemprop="name">Courses</span></a></li>
+                        <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">About Us</span></a></li>
+                        <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./pricing.html" itemprop="url" role="link"><span itemprop="name">Pricing</span></a></li>
+                        <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">Contact</span></a></li>
                     </ul>
 
                 <!-- Navigation Links -->
@@ -113,99 +113,116 @@
             <!-- Benefits -->
             <section class="benefits-section" id="benefits" role="region" aria-labelledby="benefits-title" itemscope itemtype="https://schema.org/Service">
                 <div class="container">
+                    
                     <h2 id="benefits-title" role="heading" aria-level="1" itemprop="headline">Benefits</h2>
-                    <p itemprop="description">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                    <div>
-                        <button class="view-all-btn" role="button" aria-label="View all benefits">
-                            <p>View All</p>
-                        </button>
+                    <div class="benefits-flex-container">
+                        <p itemprop="description">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                            <div>
+                                <button class="view-all-btn" role="button" aria-label="View all benefits">
+                                    <p>View All</p>
+                                </button>
+                            </div>
                     </div>
                     
                     <!-- Benefits Cards -->
 
                     <!-- I used div class with the same "benefits-card" name through each service card so that I can easily apply the same styles to everything in this section -->
-                    <div class="benefits-card" role="article" aria-labelledby="benefit-01" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
-                        <h2 role="heading" aria-level="2" itemprop="headline">01</h2>
-                        
-                        <div class="benefits-crd-content">
-                            <h3 id="benefit-01" role="heading" aria-level="3" itemprop="headline">Flexible Learning Schedule</h3>
-                            <p itemprop="description">Fit your coursework around your existing commitments and obligations.</p>
+                    <div class="benefits-layout">
+                        <div class="benefits-card" role="article" aria-labelledby="benefit-01" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
+                            <h2 role="heading" aria-level="2" itemprop="headline">01</h2>
+                            
+                            <div class="benefits-crd-content">
+                                <h3 id="benefit-01" role="heading" aria-level="3" itemprop="headline">Flexible Learning Schedule</h3>
+                                <p itemprop="description">Fit your coursework around your existing commitments and obligations.</p>
+                            </div>
+                            
+                            <div class="arrow-container">
+                                <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
+                                    <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
+                                </button> 
+                            </div>
+                            
                         </div>
-                        
-                        <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
-                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
-                        </button>
-                        
-                    </div>
 
-                    <div class="benefits-card" role="article" aria-labelledby="benefit-02" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
-                        <h2 role="heading" aria-level="2" itemprop="headline">02</h2>
-                        
-                        <div class="benefits-crd-content">
-                            <h3 id="benefit-02" role="heading" aria-level="3" itemprop="headline">Expert Instruction</h3>
-                            <p itemprop="description">Learn from industry experts who have hands-on experience in design and development.</p>
+                        <div class="benefits-card" role="article" aria-labelledby="benefit-02" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
+                            <h2 role="heading" aria-level="2" itemprop="headline">02</h2>
+                            
+                            <div class="benefits-crd-content">
+                                <h3 id="benefit-02" role="heading" aria-level="3" itemprop="headline">Expert Instruction</h3>
+                                <p itemprop="description">Learn from industry experts who have hands-on experience in design and development.</p>
+                            </div>
+                            
+                            <div class="arrow-container">
+                                <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
+                                    <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
+                                </button> 
+                            </div>
+                            
                         </div>
-                        
-                        <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
-                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
-                        </button>
-                        
-                    </div>
 
-                    <div class="benefits-card" role="article" aria-labelledby="benefit-03" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
-                        <h2 role="heading" aria-level="2" itemprop="headline">03</h2>
-                        
-                        <div class="benefits-crd-content">
-                            <h3 id="benefit-03" role="heading" aria-level="3" itemprop="headline">Diverse Course Offerings</h3>
-                            <p itemprop="description">Explore a wide range of design and development courses covering various topics.</p>
-                        </div>
-                        
-                        <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
-                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
-                        </button>
-            
-                    </div>
-
-                    <div class="benefits-card" role="article" aria-labelledby="benefit-04" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
-                        <h2 role="heading" aria-level="2" itemprop="headline">04</h2>
-                        
-                        <div class="benefits-crd-content">
-                        <h3 id="benefit-04" role="heading" aria-level="3" itemprop="headline">Updated Curriculum</h3>
-                        <p itemprop="description">Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
-                        </div>
-                        
-                        <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
-                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
-                        </button>
-
-                    </div>
-
-                    <div class="benefits-card" role="article" aria-labelledby="benefit-05" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
-                        <h2 role="heading" aria-level="2" itemprop="headline">05</h2>
-                        
-                        <div class="benefits-crd-content">
-                            <h3 id="benefit-05" role="heading" aria-level="3" itemprop="headline">Practical Projects and Assignments</h3>
-                            <p itemprop="description">Develop a portfolio showcasing your skills and abilities to potential employers.</p>
-                        </div>
-                      
-                        <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
-                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
-                        </button>
+                        <div class="benefits-card" role="article" aria-labelledby="benefit-03" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
+                            <h2 role="heading" aria-level="2" itemprop="headline">03</h2>
+                            
+                            <div class="benefits-crd-content">
+                                <h3 id="benefit-03" role="heading" aria-level="3" itemprop="headline">Diverse Course Offerings</h3>
+                                <p itemprop="description">Explore a wide range of design and development courses covering various topics.</p>
+                            </div>
+                            
+                            <div class="arrow-container">
+                                <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
+                                    <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
+                                </button> 
+                            </div>
                 
-                    </div>
-
-                    <div class="benefits-card" role="article" aria-labelledby="benefit-06" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
-                        <h2 role="heading" aria-level="2" itemprop="headline">06</h2>
-                        
-                        <div class="benefits-crd-content">
-                            <h3 id="benefit-06" role="heading" aria-level="3" itemprop="headline">Interactive Learning Environment</h3>
-                            <p itemprop="description">Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.</p>
                         </div>
 
-                        <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
-                            <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
-                        </button>
+                        <div class="benefits-card" role="article" aria-labelledby="benefit-04" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
+                            <h2 role="heading" aria-level="2" itemprop="headline">04</h2>
+                            
+                            <div class="benefits-crd-content">
+                            <h3 id="benefit-04" role="heading" aria-level="3" itemprop="headline">Updated Curriculum</h3>
+                            <p itemprop="description">Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
+                            </div>
+                            
+                            <div class="arrow-container">
+                                <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
+                                    <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
+                                </button> 
+                            </div>
 
+                        </div>
+
+                        <div class="benefits-card" role="article" aria-labelledby="benefit-05" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
+                            <h2 role="heading" aria-level="2" itemprop="headline">05</h2>
+                            
+                            <div class="benefits-crd-content">
+                                <h3 id="benefit-05" role="heading" aria-level="3" itemprop="headline">Practical Projects and Assignments</h3>
+                                <p itemprop="description">Develop a portfolio showcasing your skills and abilities to potential employers.</p>
+                            </div>
+                        
+                            <div class="arrow-container">
+                                <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
+                                    <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
+                                </button> 
+                            </div>
+                    
+                        </div>
+
+                        <div class="benefits-card" role="article" aria-labelledby="benefit-06" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog"> 
+                            <h2 role="heading" aria-level="2" itemprop="headline">06</h2>
+                            
+                            <div class="benefits-crd-content">
+                                <h3 id="benefit-06" role="heading" aria-level="3" itemprop="headline">Interactive Learning Environment</h3>
+                                <p itemprop="description">Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.</p>
+                            </div>
+
+                            <div class="arrow-container">
+                                <button class="arrow-btn" role="button" aria-label="Read more about Flexible Learning Schedule">
+                                    <img src="images/arrow.svg" role="img" alt="Orange Diagonal Arrow" itemprop="image">
+                                </button> 
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </section>
@@ -214,187 +231,192 @@
             <section class="courses" id="courses" role="region" aria-labelledby="courses-title">
                 <div class="container">
                     <h2 id="courses-title" role="heading" aria-level="2">Our Courses</h2>
-                    <p class="courses-desc">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                    <div>
-                        <button class="view-all-btn" role="button" aria-label="View all courses">
-                            <p>View All</p>
-                        </button>
+                    
+                    <div class="benefits-flex-container">
+                        <p class="courses-desc">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                        <div>
+                            <button class="view-all-btn" role="button" aria-label="View all courses">
+                                <p>View All</p>
+                            </button>
+                        </div>
                     </div>
 
                     <!-- Courses Cards -->
 
                     <!-- I used div class with the same "courses-card" name through each service card so that I can easily apply the same styles to everything in this section -->
-                    <div class="courses-card" role="article" aria-labelledby="course-1" itemscope itemtype="https://schema.org/Course">
-                        
-                        <img src="images/course-card-1.png" class="course-img" role="img" alt="Person writing on sticky note" itemprop="image">
-                        
-                        
-                        <div class="course-card-btns">
-                            <div>
-                                <button class="course-card-info-btn" role="button" itemprop="duration">
-                                    <p>4 Weeks</p>
-                                </button>
-                            </div>
-                            <div>
-                                <button class="course-card-info-btn-2" role="button">
-                                    <p>Beginner</p>
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By John Smith</p>
-                        
-                        <h3 id="course-1" role="heading" aria-level="3" itemprop="headline">Web Design Fundamentals</h3>
-                        <p itemprop="description">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
-                        <div>
-                            <button class="get-it-now-btn" role="button">
-                                <p>Get it Now</p>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="courses-card" role="article" aria-labelledby="course-2" itemscope itemtype="https://schema.org/Course">
-                        
-                        <img src="images/course-card-2.png" class="course-img" role="img" alt="Person typing on a keyboard in front of a computer" itemprop="image">
-                        
-                        
-                        <div class="course-card-btns">
-                            <div>
-                                <button class="course-card-info-btn" role="button" itemprop="duration">
-                                    <p>6 Weeks</p>
-                                </button>
-                            </div>
-                            <div>
-                                <button class="course-card-info-btn-2" role="button">
-                                    <p>Intermediate</p>
-                                </button>
-                            </div>
-                        </div>
-
-                        <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By Emily Johnson</p>
-                        
-                        <h3 id="course-2" role="heading" aria-level="3" itemprop="headline">UI/UX Design</h3>
-                        <p itemprop="description">Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
-                        <div>
-                            <button class="get-it-now-btn" role="button">
-                                <p>Get it Now</p>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="courses-card" role="article" aria-labelledby="course-3" itemscope itemtype="https://schema.org/Course">
-                        
-                        <img src="images/course-card-3.png" class="course-img" role="img" alt="Person looking at phone with book and glasses on table in front of them" itemprop="image">
-                        
-                        
-                        <div class="course-card-btns">
-                            <div>
-                                <button class="course-card-info-btn" role="button" itemprop="duration">
-                                    <p>8 Weeks</p>
-                                </button>
-                            </div>
-                            <div>
-                                <button class="course-card-info-btn-2" role="button">
-                                    <p>Intermediate</p>
-                                </button>
-                            </div>
-                        </div>
-
-                        <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By David Brown</p>
-                        
-                        <h3 id="course-3" role="heading" aria-level="3" itemprop="headline">Mobile App Development</h3>
-                        <p itemprop="description">Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
-                        <div>
-                            <button class="get-it-now-btn" role="button">
-                                <p>Get it Now</p>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="courses-card" role="article" aria-labelledby="course-4" itemscope itemtype="https://schema.org/Course">
-                        
-                        <img src="images/course-card-4.png" class="course-img" role="img" alt="Person fanning out paint color cards over a desk with keyboard and coffee" itemprop="image">
-                        
-                        
-                        <div class="course-card-btns">
-                            <div>
-                                <button class="course-card-info-btn" role="button" itemprop="duration">
-                                    <p>10 Weeks</p>
-                                </button>
-                            </div>
-                            <div>
-                                <button class="course-card-info-btn-2" role="button">
-                                    <p>Beginner</p>
-                                </button>
-                            </div>
-                        </div>
-
-                        <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By Sarah Thompson</p>
-                        
-                        <h3 id="course-4" role="heading" aria-level="3" itemprop="headline">Graphic Design for Beginners</h3>
-                        <p itemprop="description">Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
-                        <div>
-                            <button class="get-it-now-btn" role="button">
-                                <p>Get it Now</p>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="courses-card" role="article" aria-labelledby="course-5" itemscope itemtype="https://schema.org/Course">
+                    <div class="courses-layout">
+                        <div class="courses-card" role="article" aria-labelledby="course-1" itemscope itemtype="https://schema.org/Course">
                             
-                        <img src="images/course-card-5.png" class="course-img" role="img" alt="Person looking at laptop screen" itemprop="image">
-                        
-                        
-                        <div class="course-card-btns">
-                            <div>
-                                <button class="course-card-info-btn" role="button" itemprop="duration">
-                                    <p>10 Weeks</p>
-                                </button>
+                            <img src="images/course-card-1.png" class="course-img" role="img" alt="Person writing on sticky note" itemprop="image">
+                            
+                            
+                            <div class="course-card-btns">
+                                <div>
+                                    <button class="course-card-info-btn" role="button" itemprop="duration">
+                                        <p>4 Weeks</p>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="course-card-info-btn-2" role="button">
+                                        <p>Beginner</p>
+                                    </button>
+                                </div>
                             </div>
+                            
+                            <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By John Smith</p>
+                            
+                            <h3 id="course-1" role="heading" aria-level="3" itemprop="headline">Web Design Fundamentals</h3>
+                            <p itemprop="description">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
                             <div>
-                                <button class="course-card-info-btn-2" role="button">
-                                    <p>Intermediate</p>
-                                </button>
-                            </div>
-                        </div>
-
-                        <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By Michael Adams</p>
-                        
-                        <h3 id="course-5" role="heading" aria-level="3" itemprop="headline">Front-End Web Development</h3>
-                        <p itemprop="description">Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
-                        <div>
-                            <button class="get-it-now-btn" role="button">
-                                <p>Get it Now</p>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="courses-card" role="article" aria-labelledby="course-6" itemscope itemtype="https://schema.org/Course">
-                        
-                        <img src="images/course-card-6.png" class="course-img" role="img" alt="Person smiling while typing on keyboard" itemprop="image">
-                    
-                        
-                        <div class="course-card-btns">
-                            <div>
-                                <button class="course-card-info-btn" role="button" itemprop="duration">
-                                    <p>6 Weeks</p>
-                                </button>
-                            </div>
-                            <div>
-                                <button class="course-card-info-btn-2" role="button">
-                                    <p>Advance</p>
+                                <button class="get-it-now-btn" role="button">
+                                    <p>Get it Now</p>
                                 </button>
                             </div>
                         </div>
 
-                        <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By Jennifer Wilson</p>
+                        <div class="courses-card" role="article" aria-labelledby="course-2" itemscope itemtype="https://schema.org/Course">
+                            
+                            <img src="images/course-card-2.png" class="course-img" role="img" alt="Person typing on a keyboard in front of a computer" itemprop="image">
+                            
+                            
+                            <div class="course-card-btns">
+                                <div>
+                                    <button class="course-card-info-btn" role="button" itemprop="duration">
+                                        <p>6 Weeks</p>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="course-card-info-btn-2" role="button">
+                                        <p>Intermediate</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By Emily Johnson</p>
+                            
+                            <h3 id="course-2" role="heading" aria-level="3" itemprop="headline">UI/UX Design</h3>
+                            <p itemprop="description">Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
+                            <div>
+                                <button class="get-it-now-btn" role="button">
+                                    <p>Get it Now</p>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="courses-card" role="article" aria-labelledby="course-3" itemscope itemtype="https://schema.org/Course">
+                            
+                            <img src="images/course-card-3.png" class="course-img" role="img" alt="Person looking at phone with book and glasses on table in front of them" itemprop="image">
+                            
+                            
+                            <div class="course-card-btns">
+                                <div>
+                                    <button class="course-card-info-btn" role="button" itemprop="duration">
+                                        <p>8 Weeks</p>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="course-card-info-btn-2" role="button">
+                                        <p>Intermediate</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By David Brown</p>
+                            
+                            <h3 id="course-3" role="heading" aria-level="3" itemprop="headline">Mobile App Development</h3>
+                            <p itemprop="description">Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
+                            <div>
+                                <button class="get-it-now-btn" role="button">
+                                    <p>Get it Now</p>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="courses-card" role="article" aria-labelledby="course-4" itemscope itemtype="https://schema.org/Course">
+                            
+                            <img src="images/course-card-4.png" class="course-img" role="img" alt="Person fanning out paint color cards over a desk with keyboard and coffee" itemprop="image">
+                            
+                            
+                            <div class="course-card-btns">
+                                <div>
+                                    <button class="course-card-info-btn" role="button" itemprop="duration">
+                                        <p>10 Weeks</p>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="course-card-info-btn-2" role="button">
+                                        <p>Beginner</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By Sarah Thompson</p>
+                            
+                            <h3 id="course-4" role="heading" aria-level="3" itemprop="headline">Graphic Design for Beginners</h3>
+                            <p itemprop="description">Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
+                            <div>
+                                <button class="get-it-now-btn" role="button">
+                                    <p>Get it Now</p>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="courses-card" role="article" aria-labelledby="course-5" itemscope itemtype="https://schema.org/Course">
+                                
+                            <img src="images/course-card-5.png" class="course-img" role="img" alt="Person looking at laptop screen" itemprop="image">
+                            
+                            
+                            <div class="course-card-btns">
+                                <div>
+                                    <button class="course-card-info-btn" role="button" itemprop="duration">
+                                        <p>10 Weeks</p>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="course-card-info-btn-2" role="button">
+                                        <p>Intermediate</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By Michael Adams</p>
+                            
+                            <h3 id="course-5" role="heading" aria-level="3" itemprop="headline">Front-End Web Development</h3>
+                            <p itemprop="description">Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
+                            <div>
+                                <button class="get-it-now-btn" role="button">
+                                    <p>Get it Now</p>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="courses-card" role="article" aria-labelledby="course-6" itemscope itemtype="https://schema.org/Course">
+                            
+                            <img src="images/course-card-6.png" class="course-img" role="img" alt="Person smiling while typing on keyboard" itemprop="image">
                         
-                        <h3 id="course-6" role="heading" aria-level="3" itemprop="headline">Advanced JavaScript</h3>
-                        <p itemprop="description">Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.</p>
-                        <div>
-                            <button class="get-it-now-btn" role="button">
-                                <p>Get it Now</p>
-                            </button>
+                            
+                            <div class="course-card-btns">
+                                <div>
+                                    <button class="course-card-info-btn" role="button" itemprop="duration">
+                                        <p>6 Weeks</p>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="course-card-info-btn-2" role="button">
+                                        <p>Advance</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <p itemprop="provider" itemscope itemtype="https://schema.org/Person">By Jennifer Wilson</p>
+                            
+                            <h3 id="course-6" role="heading" aria-level="3" itemprop="headline">Advanced JavaScript</h3>
+                            <p itemprop="description">Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.</p>
+                            <div>
+                                <button class="get-it-now-btn" role="button">
+                                    <p>Get it Now</p>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -404,92 +426,96 @@
             <section class="testimonials-section" id="testimonials" role="region" aria-labelledby="testimonials-title" itemscope itemtype="https://schema.org/Review">
                 <div class="container">
                     <h2 id="testimonials-title" role="heading" aria-level="2">Our Testimonials</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                    <div>
-                        <button class="view-all-btn" role="button" aria-label="View all testimonials">
-                            <p>View All</p>
-                        </button>
+                    
+                    <div class="benefits-flex-container">
+                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                        <div>
+                            <button class="view-all-btn" role="button" aria-label="View all testimonials">
+                                <p>View All</p>
+                            </button>
+                        </div>
                     </div>
 
                     <!-- Testimonials Cards -->
 
                     <!-- I used div class with the same "testimonials-card" name through each service card so that I can easily apply the same styles to everything in this section -->
-                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-sarah" itemscope itemtype="https://schema.org/Review">
-                        
-                        <p itemprop="reviewBody">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
-                        
-                        <div class="user-line user-line-background">
+                    <div class="testimonials-layout">
+                        <div class="testimonials-card" role="article" aria-labelledby="testimonial-sarah" itemscope itemtype="https://schema.org/Review">
                             
-                            <img src="images/testimonials-pfp.png" role="img" alt="Headshot for a profile picture" itemprop="image">
+                            <p itemprop="reviewBody">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
                             
+                            <div class="user-line user-line-background">
+                                
+                                <img src="images/testimonials-pfp.png" role="img" alt="Headshot for a profile picture" itemprop="image">
+                                
 
-                            <p id="testimonial-sarah" itemprop="author" itemscope itemtype="https://schema.org/Person">Sarah L</p>
+                                <p id="testimonial-sarah" itemprop="author" itemscope itemtype="https://schema.org/Person">Sarah L</p>
+                                
+                                <div>
+                                    <button class="get-it-now-btn" role="button">
+                                        <p>Read Full Story</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonials-card" role="article" aria-labelledby="testimonial-jason" itemscope itemtype="https://schema.org/Review">
                             
-                            <div>
-                                <button class="get-it-now-btn" role="button">
-                                    <p>Read Full Story</p>
-                                </button>
+                            <p itemprop="reviewBody">The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
+                            
+                            <div class="user-line">
+                                <div class="testimonials-img">
+                                    <img src="images/jason-m.png" role="img" alt="Headshot for a profile picture" itemprop="image">
+                                </div>
+                            
+                                <p id="testimonial-jason" itemprop="author" itemscope itemtype="https://schema.org/Person">Jason M</p>
+                                
+                                <div>
+                                    <button class="get-it-now-btn" role="button">
+                                        <p>Read Full Story</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonials-card" role="article" aria-labelledby="testimonial-emily" itemscope itemtype="https://schema.org/Review">
+                            
+                            <p itemprop="reviewBody">The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
+                            
+                            <div class="user-line">
+                                <div class="testimonials-img">
+                                    <img src="images/emily-r.png" role="img" alt="Headshot for a profile picture" itemprop="image">
+                                </div>
+
+                                <p id="testimonial-emily" itemprop="author" itemscope itemtype="https://schema.org/Person">Emily R</p>
+                                
+                                <div>
+                                    <button class="get-it-now-btn" role="button">
+                                        <p>Read Full Story</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonials-card" role="article" aria-labelledby="testimonial-michael" itemscope itemtype="https://schema.org/Review">
+                            
+                            <p itemprop="reviewBody">I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
+                            
+                            <div class="user-line">
+                                <div class="testimonials-img">
+                                    <img src="images/michael-k.png" role="img" alt="Headshot for a profile picture" itemprop="image">
+                                </div>
+
+                                <p id="testimonial-michael" itemprop="author" itemscope itemtype="https://schema.org/Person">Michael K</p>
+                                
+                                <div>
+                                    <button class="get-it-now-btn" role="button">
+                                        <p>Read Full Story</p>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-jason" itemscope itemtype="https://schema.org/Review">
-                        
-                        <p itemprop="reviewBody">The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
-                        
-                        <div class="user-line">
-                            <div class="testimonials-img">
-                                <img src="images/jason-m.png" role="img" alt="Headshot for a profile picture" itemprop="image">
-                            </div>
-                        
-                            <p id="testimonial-jason" itemprop="author" itemscope itemtype="https://schema.org/Person">Jason M</p>
-                            
-                            <div>
-                                <button class="get-it-now-btn" role="button">
-                                    <p>Read Full Story</p>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-emily" itemscope itemtype="https://schema.org/Review">
-                        
-                        <p itemprop="reviewBody">The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
-                        
-                        <div class="user-line">
-                            <div class="testimonials-img">
-                                <img src="images/emily-r.png" role="img" alt="Headshot for a profile picture" itemprop="image">
-                            </div>
-
-                            <p id="testimonial-emily" itemprop="author" itemscope itemtype="https://schema.org/Person">Emily R</p>
-                            
-                            <div>
-                                <button class="get-it-now-btn" role="button">
-                                    <p>Read Full Story</p>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonials-card" role="article" aria-labelledby="testimonial-michael" itemscope itemtype="https://schema.org/Review">
-                        
-                        <p itemprop="reviewBody">I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
-                        
-                        <div class="user-line">
-                            <div class="testimonials-img">
-                                <img src="images/michael-k.png" role="img" alt="Headshot for a profile picture" itemprop="image">
-                            </div>
-
-                            <p id="testimonial-michael" itemprop="author" itemscope itemtype="https://schema.org/Person">Michael K</p>
-                            
-                            <div>
-                                <button class="get-it-now-btn" role="button">
-                                    <p>Read Full Story</p>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
             </section>
 
@@ -497,54 +523,105 @@
             <section class="pricing-section" id="pricing" role="region" aria-labelledby="pricing-title">
                 <div class="container">
                     <h2 id="pricing-title" role="heading" aria-level="2">Our Pricing</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                    <div class="monthly-yearly-box" role="tablist" aria-label="Pricing options">
-                        <button class="monthly-btn" role="tab" aria-selected="true" aria-controls="pricing-monthly">
-                            <p>Monthly</p>
-                        </button>
-                        <p class="yearly-text" role="tab" aria-selected="false" aria-controls="pricing-yearly">Yearly</p>
-                    </div>
+                    
+                        <div class="benefits-flex-container">
+                            <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                            <div class="monthly-yearly-box" role="tablist" aria-label="Pricing options">
+                                <button class="monthly-btn" role="tab" aria-selected="true" aria-controls="pricing-monthly">
+                                    <p>Monthly</p>
+                                </button>
+                                <p class="yearly-text" role="tab" aria-selected="false" aria-controls="pricing-yearly">Yearly</p>
+                            </div>
+                        </div>
 
                     <!-- Pricing Cards -->
 
                     <!-- I used div class with the same "pricing-card" name through each service card so that I can easily apply the same styles to everything in this section -->
                     <div class="card-section">
-                        <div class="pricing-card" role="article" aria-labelledby="free-plan" itemscope itemtype="https://schema.org/Product">
-                            <div class="card-background">
-                                <div class="plan-text">
-                                    <h2 id="free-plan" role="heading" aria-level="2" itemprop="headline">Free Plan</h2>
+                        <div class="pricing-layout">
+                            <div class="pricing-card" role="article" aria-labelledby="free-plan" itemscope itemtype="https://schema.org/Product">
+                                <div class="card-background">
+                                    <div class="plan-text">
+                                        <h2 id="free-plan" role="heading" aria-level="2" itemprop="headline">Free Plan</h2>
+                                    </div>
+                                    <h3 role="heading" aria-level="3" itemprop="price">$0<strong>/month</strong></h3>
+                                    <div class="white-background">
+                                        
+                                            <h4 role="heading" aria-level="4" itemprop="headline">Available Features</h4>
+                                            <ul role="list" itemscope itemtype="https://schema.org/Product">
+                                                <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                                    <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                                    <p>Access to selected free courses.</p>
+                                                </li>
+                                                <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                                    <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                                    <p>Limited course materials and resources.</p>
+                                                </li>
+                                                <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                                    <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                                    <p>Basic community support.</p>
+                                                </li>
+                                                <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                                    <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                                    <p>No certification upon completion.</p>
+                                                </li>
+                                                <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                                    <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                                    <p>Ad-supported platform.</p>
+                                                </li>
+                                                <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                                    <img src="images/x.svg" role="img" alt="x" itemprop="image">
+                                                    <p>Access to exclusive Pro Plan community forums.</p>
+                                                </li>
+                                                <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
+                                                    <img src="images/x.svg" role="img" alt="x" itemprop="image">
+                                                    <p>Early access to new courses and updates.</p>
+                                                </li>
+                                            </ul>
+                                            <div>
+                                                <button class="get-started-btn" role="button" aria-label="Get started with the Free Plan">
+                                                    <p>Get Started</p>
+                                                </button>
+                                            </div>
+                                    </div>
                                 </div>
-                                <h3 role="heading" aria-level="3" itemprop="price">$0<strong>/month</strong></h3>
-                                <div class="white-background">
-                                    
+                            </div>
+
+                            <div class="pricing-card" role="article" aria-labelledby="free-plan" itemscope itemtype="https://schema.org/Product">
+                                <div class="card-background">
+                                    <div class="plan-text">
+                                        <h2 id="pro-plan" role="heading" aria-level="2" itemprop="headline">Pro Plan</h2>
+                                    </div>
+                                    <h3 role="heading" aria-level="3" itemprop="price">$79<strong>/month</strong></h3>
+                                    <div class="white-background">
                                         <h4 role="heading" aria-level="4" itemprop="headline">Available Features</h4>
                                         <ul role="list" itemscope itemtype="https://schema.org/Product">
                                             <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
                                                 <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
-                                                <p>Access to selected free courses.</p>
+                                                <p>Unlimited access to all courses.</p>
                                             </li>
                                             <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
                                                 <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
-                                                <p>Limited course materials and resources.</p>
+                                                <p>Unlimited course materials and resources.</p>
                                             </li>
                                             <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
                                                 <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
-                                                <p>Basic community support.</p>
+                                                <p>Priority support from instructors.</p>
                                             </li>
                                             <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
                                                 <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
-                                                <p>No certification upon completion.</p>
+                                                <p>Course completion certificates.</p>
                                             </li>
                                             <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
                                                 <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
-                                                <p>Ad-supported platform.</p>
+                                                <p>Ad-free experience.</p>
                                             </li>
                                             <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                                <img src="images/x.svg" role="img" alt="x" itemprop="image">
+                                                <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
                                                 <p>Access to exclusive Pro Plan community forums.</p>
                                             </li>
                                             <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                                <img src="images/x.svg" role="img" alt="x" itemprop="image">
+                                                <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
                                                 <p>Early access to new courses and updates.</p>
                                             </li>
                                         </ul>
@@ -553,52 +630,6 @@
                                                 <p>Get Started</p>
                                             </button>
                                         </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="pricing-card" role="article" aria-labelledby="free-plan" itemscope itemtype="https://schema.org/Product">
-                            <div class="card-background">
-                                <div class="plan-text">
-                                    <h2 id="pro-plan" role="heading" aria-level="2" itemprop="headline">Pro Plan</h2>
-                                </div>
-                                <h3 role="heading" aria-level="3" itemprop="price">$79<strong>/month</strong></h3>
-                                <div class="white-background">
-                                    <h4 role="heading" aria-level="4" itemprop="headline">Available Features</h4>
-                                    <ul role="list" itemscope itemtype="https://schema.org/Product">
-                                        <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
-                                            <p>Unlimited access to all courses.</p>
-                                        </li>
-                                        <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
-                                            <p>Unlimited course materials and resources.</p>
-                                        </li>
-                                        <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
-                                            <p>Priority support from instructors.</p>
-                                        </li>
-                                        <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
-                                            <p>Course completion certificates.</p>
-                                        </li>
-                                        <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
-                                            <p>Ad-free experience.</p>
-                                        </li>
-                                        <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
-                                            <p>Access to exclusive Pro Plan community forums.</p>
-                                        </li>
-                                        <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
-                                            <p>Early access to new courses and updates.</p>
-                                        </li>
-                                    </ul>
-                                    <div>
-                                        <button class="get-started-btn" role="button" aria-label="Get started with the Free Plan">
-                                            <p>Get Started</p>
-                                        </button>
                                     </div>
                                 </div>
                             </div>
