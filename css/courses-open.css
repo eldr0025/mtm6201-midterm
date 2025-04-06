@@ -1,5 +1,30 @@
 body {
     background-color: #F7F7F8;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.be-vietnam-pro-regular {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.be-vietnam-pro-medium {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+.be-vietnam-pro-semibold {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+.be-vietnam-pro-bold {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .skip-link {
@@ -20,7 +45,7 @@ body {
 
 .free-courses-banner {
     background-color: #FF9500;
-    color: #FFFFFF;
+    color: #262626;
     border-radius: 10px;
     margin: 45px 15px 15px 15px;
     padding: 1px;
@@ -93,7 +118,7 @@ nav ul li a.current {
 }
 
 .login {
-    color: #FFFFFF;
+    color: #262626;
     background-color: #FF9500;
     text-decoration: none;
     padding: 20px;
@@ -153,8 +178,7 @@ nav ul li a.current {
     color: #59595A;
     border: none;
     border-radius: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
     margin-top: 30px;
     margin-bottom: 10px;
 }
@@ -165,8 +189,7 @@ nav ul li a.current {
     color: #59595A;
     border: none;
     border-radius: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
     margin-top: 30px;
     margin-bottom: 10px;
 }

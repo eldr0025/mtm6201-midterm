@@ -1,5 +1,30 @@
 body {
     background-color: #F7F7F8;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.be-vietnam-pro-regular {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.be-vietnam-pro-medium {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+.be-vietnam-pro-semibold {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+.be-vietnam-pro-bold {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .skip-link {
@@ -20,7 +45,7 @@ body {
 
 .free-courses-banner {
     background-color: #FF9500;
-    color: #FFFFFF;
+    color: #262626;
     border-radius: 10px;
     margin: 45px 15px 15px 15px;
     padding: 1px;
@@ -79,7 +104,7 @@ nav ul li a.current {
 }
 
 .login {
-    color: #FFFFFF;
+    color: #262626;
     background-color: #FF9500;
     text-decoration: none;
     padding: 20px;
@@ -93,7 +118,7 @@ h1 {
 }
 
 h1 strong {
-    color: #FF9500;
+    color: #AD5F00;
 }
 
 .unlock-potential {
@@ -127,7 +152,7 @@ h1 strong {
 }
 
 .explore-btn {
-    color: #FFFFFF;
+    color: #262626;
     background-color: #FF9500;
     text-decoration: none;
     border: none;
@@ -191,6 +216,7 @@ h1 strong {
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
+    font-size: 14px;
 }
 
 .view-all-btn:hover {
@@ -198,10 +224,6 @@ h1 strong {
     transition: transform 1s ease;
     background-color: #FF9500;
     color: #FFFFFF;
-}
-
-.view-all-btn p {
-    font-size: 14px;
 }
 
 .benefits-section {
@@ -279,8 +301,7 @@ h1 strong {
     border: 1px solid #F1F1F3;
     border-radius: 10px;
     margin-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
 }
 
 .course-card-info-btn-2 {
@@ -297,6 +318,7 @@ h1 strong {
     border: 1px solid #F1F1F3;
     border-radius: 10px;
     margin-top: 15px;
+    padding: 15px;
 }
 
 .course-img {
@@ -349,7 +371,7 @@ h1 strong {
 
 .monthly-btn {
     background-color: #FF9500; 
-    color: #FFFFFF;
+    color: #262626;
     border: none;
     border-radius: 5px;
     padding-left: 20px;
@@ -447,7 +469,7 @@ h1 strong {
 
 .get-started-btn {
     background-color: #FF9500;
-    color: #FFFFFF;
+    color: #262626;
     border: none;
     border-radius: 0 0 10px 10px;
     width: 100%;
@@ -456,9 +478,10 @@ h1 strong {
     margin-top: 10px;
 }
 
-.get-started-btn p {
+.get-started-btn-txt {
     font-size: 18px;
     animation: textPulse 1.1s infinite alternate ease-in-out;
+    display: inline-block;
 }
 
 .pricing-description-header {
@@ -491,8 +514,7 @@ h1 strong {
 .faq-section .view-all-btn {
     margin-top: -10px;
     margin-left: 20px;
-    padding-bottom: 1px;
-    padding-top: 1px;
+    padding: 15px;
     border-radius: 5px;
 }
 
@@ -747,7 +769,7 @@ footer ul li a {
     }
 
     .descriptive-section h2 {
-        margin-bottom: -20px;
+        margin-bottom: 10px;
     }
 
     .benefits-flex-container {
