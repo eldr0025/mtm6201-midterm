@@ -51,24 +51,25 @@
             <div class="nav-container">
                 <img src="/images/logo.svg" alt="Company logo" itemprop="logo">
 
-                <!-- Navigation Bar -->
-                <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                    <ul class="nav-list" role="list">
-                        <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" class="current" itemprop="url" role="link"><span itemprop="name">Home</span></a></li>
-                        <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./courses-open.html" itemprop="url" role="link"><span itemprop="name">Courses</span></a></li>
-                        <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">About Us</span></a></li>
-                        <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="./pricing.html" itemprop="url" role="link"><span itemprop="name">Pricing</span></a></li>
-                        <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">Contact</span></a></li>
-                    </ul>
+                <div class="nav-content">
+                    <!-- Navigation Bar -->
+                    <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <ul class="nav-list" role="list">
+                            <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" class="current" itemprop="url" role="link"><span itemprop="name">Home</span></a></li>
+                            <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="courses-open.html" itemprop="url" role="link"><span itemprop="name">Courses</span></a></li>
+                            <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">About Us</span></a></li>
+                            <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="pricing.html" itemprop="url" role="link"><span itemprop="name">Pricing</span></a></li>
+                            <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">Contact</span></a></li>
+                        </ul>
+                    </nav>
 
-                <!-- Navigation Links -->
-                <div class="nav-btns">
-                    <a href="#" class="signup" role="button" aria-label="Sign Up for an Account" itemscope itemtype="https://schema.org/Action">Sign Up</a>
-                    <a href="#" class="login" role="button" aria-label="Log in to Your Account" itemscope itemtype="https://schema.org/Action">Login</a>
+                    <!-- Navigation Links -->
+                    <div class="nav-btns">
+                        <a href="#" class="signup" role="button" aria-label="Sign Up for an Account" itemscope itemtype="https://schema.org/Action">Sign Up</a>
+                        <a href="#" class="login" role="button" aria-label="Log in to Your Account" itemscope itemtype="https://schema.org/Action">Login</a>
+                    </div>
                 </div>
             </div>
-        </nav>
-        
     </header>
 
     <main id="main" role="main" itemscope itemtype="https://schema.org/WebPageElement">
@@ -113,15 +114,14 @@
             <!-- Benefits -->
             <section class="benefits-section" id="benefits" role="region" aria-labelledby="benefits-title" itemscope itemtype="https://schema.org/Service">
                 <div class="container">
-                    
-                    <h2 id="benefits-title" role="heading" aria-level="1" itemprop="headline">Benefits</h2>
-                    <div class="benefits-flex-container">
-                        <p itemprop="description">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                            <div>
-                                <button class="view-all-btn" role="button" aria-label="View all benefits">
-                                    <p>View All</p>
-                                </button>
-                            </div>
+                    <div class="descriptive-section">
+                        <h2 id="benefits-title" role="heading" aria-level="1" itemprop="headline">Benefits</h2>
+                        <div class="benefits-flex-container">
+                            <p itemprop="description">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                            <button class="view-all-btn" role="button" aria-label="View all benefits">
+                                <p>View All</p>
+                            </button>
+                        </div>
                     </div>
                     
                     <!-- Benefits Cards -->
@@ -230,12 +230,11 @@
             <!-- Our Courses -->
             <section class="courses" id="courses" role="region" aria-labelledby="courses-title">
                 <div class="container">
-                    <h2 id="courses-title" role="heading" aria-level="2">Our Courses</h2>
-                    
-                    <div class="benefits-flex-container">
-                        <p class="courses-desc">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                        <div>
-                            <button class="view-all-btn" role="button" aria-label="View all courses">
+                    <div class="descriptive-section">
+                        <h2 id="benefits-title" role="heading" aria-level="1" itemprop="headline">Our Courses</h2>
+                        <div class="benefits-flex-container">
+                            <p itemprop="description">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                            <button class="view-all-btn" role="button" aria-label="View all benefits">
                                 <p>View All</p>
                             </button>
                         </div>
@@ -425,12 +424,11 @@
             <!-- Our Testimonials -->
             <section class="testimonials-section" id="testimonials" role="region" aria-labelledby="testimonials-title" itemscope itemtype="https://schema.org/Review">
                 <div class="container">
-                    <h2 id="testimonials-title" role="heading" aria-level="2">Our Testimonials</h2>
-                    
-                    <div class="benefits-flex-container">
-                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                        <div>
-                            <button class="view-all-btn" role="button" aria-label="View all testimonials">
+                    <div class="descriptive-section">
+                        <h2 id="benefits-title" role="heading" aria-level="1" itemprop="headline">Our Testomonials</h2>
+                        <div class="benefits-flex-container">
+                            <p itemprop="description">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                            <button class="view-all-btn" role="button" aria-label="View all benefits">
                                 <p>View All</p>
                             </button>
                         </div>
@@ -522,8 +520,7 @@
             <!-- Our Pricing -->
             <section class="pricing-section" id="pricing" role="region" aria-labelledby="pricing-title">
                 <div class="container">
-                    <h2 id="pricing-title" role="heading" aria-level="2">Our Pricing</h2>
-                    
+                    <h2 id="pricing-title" class="pricing-description-header" role="heading" aria-level="2">Our Pricing</h2>
                         <div class="benefits-flex-container">
                             <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                             <div class="monthly-yearly-box" role="tablist" aria-label="Pricing options">
@@ -635,58 +632,62 @@
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </section>
 
             <!-- Frequently Asked Questions -->
             <section class="faq-section" id="faq" role="region" aria-labelledby="faq-header" itemscope itemtype="https://schema.org/FAQPage">
                 <div class="container">
-                    <h2 class="faq-header" id="faq-header" role="heading" aria-level="2">Frequently Asked Questions</h2>
-                    <p class="faq-sub-header">Still you have any questions? Contact our</p>
-                    <p class="faq-sub-header">Team via support@skillbridge.com</p>
-                    <div>
-                        <button class="view-all-btn" role="button">
-                            <p>See All FAQ's</p>
-                        </button>
-                    </div>
-
-                    <!-- FAQ Card -->
-                    
-                    <div class="faq-large-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <div class="q-and-a-flex">
-                            <h2 id="faq-question-1" role="heading" aria-level="2" itemprop="headline">Can I enroll in multiple courses at once?</h2>
-                            <img src="images/yellow-x.svg" role="img" alt="x" itemprop="image">
+                    <div class="faq-grid-layout">
+                        <div class="faq-grid-item">
+                            <h2 class="faq-header" id="faq-header" role="heading" aria-level="2">Frequently Asked Questions</h2>
+                            <p class="faq-sub-header">Still you have any questions? Contact our</p>
+                            <p class="faq-sub-header">Team via support@skillbridge.com</p>
+                            <div>
+                                <button class="view-all-btn" role="button">
+                                    <p>See All FAQ's</p>
+                                </button>
+                            </div>
                         </div>
 
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p id="faq-answer-1" hidden role="region" aria-live="polite" itemprop="text">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                        <!-- FAQ Card -->
+                        <div class="faq-grid-item">
+                            <div class="faq-large-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="q-and-a-flex">
+                                    <h2 id="faq-question-1" role="heading" aria-level="2" itemprop="headline">Can I enroll in multiple courses at once?</h2>
+                                    <img src="images/yellow-x.svg" role="img" alt="x" itemprop="image">
+                                </div>
+
+                                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p id="faq-answer-1" hidden role="region" aria-live="polite" itemprop="text">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                                </div>
+
+                                <div class="enrollment-process-background">
+                                    <h2 id="faq-question-2" role="heading" aria-level="2" itemprop="headline">Enrollment Process for Different Courses</h2>
+                                    <img src="images/horiz-arrow.svg" role="img" alt="Horizontal arrow pointing from right to left" itemprop="image">
+                                </div>
+                            </div>
+
+                            <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h2 id="faq-question-3" role="heading" aria-level="2" itemprop="headline">What kind of support can I expect from instructors</h2>
+                                <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
+                            </div>
+
+                            <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h2 id="faq-question-4" role="heading" aria-level="2" itemprop="headline">Are the courses self-paced or do they have specific start and end dates?</h2>
+                                <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
+                            </div>
+
+                            <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h2 id="faq-question-5" role="heading" aria-level="2" itemprop="headline">Are there any prerequisites for the courses?</h2>
+                                <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
+                            </div>
+
+                            <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h2 id="faq-question-6" role="heading" aria-level="2" itemprop="headline">Can I download the course materials for offline access?</h2>
+                                <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
+                            </div>
                         </div>
-
-                        <div class="enrollment-process-background">
-                            <h2 id="faq-question-2" role="heading" aria-level="2" itemprop="headline">Enrollment Process for Different Courses</h2>
-                            <img src="images/horiz-arrow.svg" role="img" alt="Horizontal arrow pointing from right to left" itemprop="image">
-                        </div>
-                    </div>
-
-                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <h2 id="faq-question-3" role="heading" aria-level="2" itemprop="headline">What kind of support can I expect from instructors</h2>
-                        <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
-                    </div>
-
-                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <h2 id="faq-question-4" role="heading" aria-level="2" itemprop="headline">Are the courses self-paced or do they have specific start and end dates?</h2>
-                        <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
-                    </div>
-
-                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <h2 id="faq-question-5" role="heading" aria-level="2" itemprop="headline">Are there any prerequisites for the courses?</h2>
-                        <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
-                    </div>
-
-                    <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <h2 id="faq-question-6" role="heading" aria-level="2" itemprop="headline">Can I download the course materials for offline access?</h2>
-                        <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
                     </div>
                 </div>
             </section>
@@ -704,7 +705,7 @@
                 </li>
                 <li class="footer-flex-display" role="listitem" itemscope itemprop="contactPoint" itemtype="https://schema.org/ContactPoint"> 
                     <img src="images/phone.svg" role="img" alt="Phone icon" itemprop="image">
-                    <p><a href="tel:+9191813232309" itemprop="telephone">+91 91813 23 2309</p>
+                    <p itemprop="telephone">+91 91813 23 2309</p>
                 </li>
                 <li class="footer-flex-display" role="listitem" itemscope itemprop="address" itemtype="https://schema.org/PostalAddress">
                     <img src="images/pin.svg" role="img" alt="Pin icon" itemprop="image">
@@ -731,20 +732,23 @@
                         <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#testimonials" itemprop="item" itemscope itemtype="https://schema.org/Thing">Our Goals</a><meta itemprop="position" content="3"></li>
                     </ul>
                 </div>
-            </div>
             
-            <h2 class="social-profiles" role="heading" aria-level="2" itemprop="headline">Social Profiles</h2>
-            <ul class="social-profiles-flex" role="list" aria-label="Social Media Links" itemscope itemprop="sameAs" itemtype="https://schema.org/URL">
-                <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits" itemprop="item" itemscope itemtype="https://schema.org/Thing">
-                    <img src="images/facebook.svg" role="img" alt="Facebook logo" itemprop="image">
-                </li>
-                <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits" itemprop="item" itemscope itemtype="https://schema.org/Thing">
-                    <img src="images/twitter.svg" role="img" alt="Twitter logo" itemprop="image">
-                </li>
-                <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits" itemprop="item" itemscope itemtype="https://schema.org/Thing">
-                    <img src="images/linkedin.svg" role="img" alt="LinkedIn logo" itemprop="image">
-                </li>
-            </ul>
+
+                <div class="grid-item">
+                    <h2 class="social-profiles" role="heading" aria-level="2" itemprop="headline">Social Profiles</h2>
+                    <ul class="social-profiles-flex" role="list" aria-label="Social Media Links" itemscope itemprop="sameAs" itemtype="https://schema.org/URL">
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits" itemprop="item" itemscope itemtype="https://schema.org/Thing">
+                            <img src="images/facebook.svg" role="img" alt="Facebook logo" itemprop="image">
+                        </li>
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits" itemprop="item" itemscope itemtype="https://schema.org/Thing">
+                            <img src="images/twitter.svg" role="img" alt="Twitter logo" itemprop="image">
+                        </li>
+                        <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits" itemprop="item" itemscope itemtype="https://schema.org/Thing">
+                            <img src="images/linkedin.svg" role="img" alt="LinkedIn logo" itemprop="image">
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
             <p class="copyright-line" itemscope itemtype="https://schema.org/CreativeWork">&copy; 2025 Skillbridge. All rights reserved.</p>
         </div>
