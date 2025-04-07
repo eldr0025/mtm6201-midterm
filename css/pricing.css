@@ -1,8 +1,10 @@
+/* Giving body grey background and setting font family for the whole page */
 body {
     background-color: #F7F7F8;
     font-family: "Be Vietnam Pro", sans-serif;
 }
 
+/* Custom font styling */
 .be-vietnam-pro-regular {
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 400;
@@ -27,6 +29,7 @@ body {
     font-style: normal;
 }
 
+/* Skip link customization and positioning to be off screen until tab button is pressed and it is focused on */
 .skip-link {
     position: absolute;
     top: -50px; 
@@ -43,13 +46,14 @@ body {
     top: 1px;
 }
 
+/* Free courses banner styling */
 .free-courses-banner {
     background-color: #FF9500;
     color: #262626;
-    border-radius: 10px;
-    margin: 45px 15px 15px 15px;
+    border-radius: 10px; /* Rounds corners */
+    margin: 45px 15px 15px 15px; /* Basic spacing */
     padding: 1px;
-    text-align: center;
+    text-align: center; /* Centers text within the container */
 }
 
 .free-courses-banner p {
@@ -61,10 +65,12 @@ body {
     border-bottom: 1px solid #F1F1F3;
 }
 
+/* Logo spacing */
 header img {
     margin: 0 0 0 215px;
 }
 
+/* Nav list customization */
 .nav-list {
     display: flex; /* Creating a flex box */
     flex-direction: column; /* Changing the nav list to vertical */
@@ -82,7 +88,7 @@ nav ul li a {
     padding: 20px 50px;
     color: #262626;
     font-size: 18px;
-    text-decoration: none;
+    text-decoration: none; /* Removes any default styling that automatically gets applied to list items */
     display: inline-block;
     text-align: center;
     border-bottom: 1px solid #F1F1F3;
@@ -91,10 +97,11 @@ nav ul li a {
 
 nav ul li a.current {
     background-color: #F1F1F3;
-    width: 73%;
-    border-radius: 5px;
+    width: 73%; 
+    border-radius: 5px; /* Rounds corners */
 }
 
+/* Sign up & Login button styling */
 .nav-btns {
     text-align: left;
     margin-left: 20px;
@@ -113,8 +120,8 @@ nav ul li a.current {
     background-color: #FF9500;
     text-decoration: none;
     padding: 20px;
-    margin-left: 20px;
-    border-radius: 10px;
+    margin-left: 20px; /* General spacing */
+    border-radius: 10px; /* Rounds corners */
 }
 
 .monthly-yearly-box {
@@ -140,6 +147,7 @@ nav ul li a.current {
     padding-left: 20px;
 }
 
+/* Pricing section */
 .card-section {
     background-color: #FFFFFF;
     margin-top: 50px;
@@ -158,6 +166,7 @@ nav ul li a.current {
     margin-left: 25px;
 }
 
+/* Pricing section headers styling */
 .card-section h2
 ,h3 {
     border: none;
@@ -213,6 +222,7 @@ nav ul li a.current {
     margin-left: 10px;
 }
 
+/* Custom text pulsing and changing sizes animation for the get started buttons */
 @keyframes textPulse {
     0% {
         transform: scale(1);
@@ -236,6 +246,7 @@ nav ul li a.current {
     margin-top: 10px;
 }
 
+/* Applying custom animation to the text of the button specifically */
 .get-started-btn-txt {
     font-size: 18px;
     animation: textPulse 1.1s infinite alternate ease-in-out;
@@ -254,6 +265,8 @@ nav ul li a.current {
     margin-top: 70px;
 }
 
+
+/* Faq section */
 .faq-header {
     padding: 20px;
     font-size: 37px;
@@ -327,6 +340,7 @@ nav ul li a.current {
     margin-left: 30px;
 }
 
+/* Flex box allows multiple elements to go on the same line */
 .q-and-a-flex {
     display: flex;
     justify-content: space-between;
@@ -389,8 +403,10 @@ nav ul li a.current {
     max-width: 40px;
 }
 
+/* Footer section styling */
 footer {
     background-color: #FFFFFF;
+    /* General spacing of the white background of the footer */
     margin-top: 50px;
     margin-bottom: -20px;
     margin-left: -8px;
@@ -400,7 +416,7 @@ footer {
 footer ul {
     list-style: none;
     margin-left: -21px;
-    line-height: 0.1;
+    line-height: 0.1; /* Spaces list items vertically */
 }
 
 .footer-flex-display {
@@ -411,6 +427,7 @@ footer ul {
     margin-left: 10px;
 }
 
+/* Company logo */
 .footer-logo {
     margin-right: 10px;
     margin-top: 30px;
@@ -429,6 +446,7 @@ footer ul li a {
     margin-top: 5px;
 }
 
+/* Laying out the footer grid items out in a grid with 3 columns and 1 row */
 .footer-grid-layout {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -445,6 +463,7 @@ footer ul li a {
     margin-top: 5px;
 }
 
+/* Flexbox allows multiple elements to go on the same line */
 .social-profiles-flex {
     display: flex;
     margin-top: -10px;
@@ -470,12 +489,14 @@ footer ul li a {
 }
 
 
-/* Desktop */
+/* Desktop media query styling */
 @media (min-width: 1150px) {
+    /* Free courses banner */
     .free-courses-banner p {
         font-size: 16px;
     }
 
+    /* Nav list */
     .nav-container {
         display: flex;
         align-items: center;
@@ -500,14 +521,16 @@ footer ul li a {
     .nav-list {
         display: flex;
         margin-left: 80px;
-        flex-direction: row;
+        flex-direction: row; /* Changing nav list to be horizontal for desktop version */
         justify-content: flex-end;
     }
-
+    
+    /* Grey box styling */
     .current {
         padding: 10px;
     }
 
+    /* Signup and login button customization */
     .nav-btns {
         display: flex;
         align-items: center;
@@ -515,9 +538,10 @@ footer ul li a {
     }
 
     .signup {
-        white-space: nowrap;
+        white-space: nowrap; /* Ensures two words don't go on two different lines */
     }
 
+    /* H1 styling */
     h1 {
         font-size: 30px;
     }
@@ -531,6 +555,9 @@ footer ul li a {
         margin: 0 auto;
     }
 
+    /* Pricing section */
+    
+    /* Pricing grid layout for desktop versions */
     .pricing-layout {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -543,6 +570,7 @@ footer ul li a {
         padding: 0 10px;
     }
 
+    /* Pricing card styling */
     .pricing-card {
         width: 100%; 
         padding: 18px;
@@ -559,15 +587,18 @@ footer ul li a {
         margin: 0px;
     }
 
+    /* Container styling */
     .container {
         max-width: 1100px;
         margin: 0 auto;
     }
 
+    /* FAQ section styling */
     .faq-section {
         margin-top: 80px;
     }
 
+    /* Grid layout for desktop versions, 2 columns, no rows */
     .header-layout {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
@@ -578,6 +609,7 @@ footer ul li a {
         margin-left: 20px;
     }
 
+    /* Faq grid layout for desktop versions */
     .faq-grid-layout {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

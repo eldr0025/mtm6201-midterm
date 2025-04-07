@@ -1,8 +1,10 @@
+/* Giving body grey background and setting font family for the whole page */
 body {
     background-color: #F7F7F8;
     font-family: "Be Vietnam Pro", sans-serif;
 }
 
+/* Custom font styling */
 .be-vietnam-pro-regular {
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 400;
@@ -27,6 +29,7 @@ body {
     font-style: normal;
 }
 
+/* Skip link customization and positioning to be off screen until tab button is pressed and it is focused on */
 .skip-link {
     position: absolute;
     top: -50px; 
@@ -43,6 +46,7 @@ body {
     top: 1px;
 }
 
+/* Free courses banner styling */
 .free-courses-banner {
     background-color: #FF9500;
     color: #262626;
@@ -60,6 +64,7 @@ body {
     margin-top: 70px;
 }
 
+/* Logo spacing */
 header img {
     margin: 0 0 0 215px;
 }
@@ -74,6 +79,7 @@ header img {
     object-fit: cover;
 }
 
+/* Nav list customization */
 .nav-list {
     display: flex; /* Creating a flex box */
     flex-direction: column; /* Changing the nav list to vertical */
@@ -91,7 +97,7 @@ nav ul li a {
     padding: 20px 50px;
     color: #262626;
     font-size: 18px;
-    text-decoration: none;
+    text-decoration: none; /* Removes any default styling that automatically gets applied to list items */
     display: inline-block;
     text-align: center;
     border-bottom: 1px solid #F1F1F3;
@@ -101,7 +107,7 @@ nav ul li a {
 nav ul li a.current {
     background-color: #F1F1F3;
     width: 73%;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounds corners */
 }
 
 .nav-btns {
@@ -112,6 +118,7 @@ nav ul li a.current {
     border-bottom: 1px solid #F1F1F3;
 }
 
+/* Sign up & Login button styling */
 .signup {
     color: #262626;
     text-decoration: none;
@@ -122,12 +129,13 @@ nav ul li a.current {
     background-color: #FF9500;
     text-decoration: none;
     padding: 20px;
-    margin-left: 20px;
-    border-radius: 10px;
+    margin-left: 20px; /* General spacing */
+    border-radius: 10px; /* Rounds corners */
 }
 
+/* Course main banner */
 .course-banner {
-    width: 100%;
+    width: 100%; /* Makes banner scale properly across all screen sizes */
 }
 
 .large-info-card {
@@ -137,6 +145,7 @@ nav ul li a.current {
     border-radius: 10px;
 }
 
+/* Large info card styling */
 .large-info-card h2 {
     text-align: right;
     padding: 25px;
@@ -149,6 +158,7 @@ nav ul li a.current {
     font-size: 20px;
 }
 
+/* Info card styling */
 .info-card {
     border: 1px solid #F1F1F3;
     padding-left: 15px;
@@ -160,6 +170,7 @@ nav ul li a.current {
     border-radius: 10px;
 }
 
+/* Special info card styling */
 .info-card-highlighted {
     border: 1px solid #FFD599;
     box-shadow: 0 0 0 4px #FFF4E5;
@@ -172,6 +183,7 @@ nav ul li a.current {
     border-radius: 10px;
 }
 
+/* Duration button styling */
 .time-btn {
     display: flex;
     background-color: #F7F7F8;
@@ -198,8 +210,10 @@ nav ul li a.current {
     margin-right: 5px;
 }
 
+/* Footer styling */
 footer {
     background-color: #FFFFFF;
+    /* General spacing of the white background of the footer */
     margin-top: 50px;
     margin-bottom: -20px;
     margin-left: -8px;
@@ -209,7 +223,7 @@ footer {
 footer ul {
     list-style: none;
     margin-left: -21px;
-    line-height: 0.1;
+    line-height: 0.1; /* Spaces list items vertically */
 }
 
 .footer-flex-display {
@@ -220,6 +234,7 @@ footer ul {
     margin-left: 10px;
 }
 
+/* Company logo */
 .footer-logo {
     margin-right: 10px;
     margin-top: 30px;
@@ -238,6 +253,7 @@ footer ul li a {
     margin-top: 5px;
 }
 
+/* Laying out the footer grid items out in a grid with 3 columns and 1 row */
 .footer-grid-layout {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -254,6 +270,7 @@ footer ul li a {
     margin-top: 5px;
 }
 
+/* Flexbox allows multiple elements to go on the same line */
 .social-profiles-flex {
     display: flex;
     margin-top: -10px;
@@ -278,11 +295,14 @@ footer ul li a {
     color: #656567;
 }
 
+/* Desktop media query styling */
 @media (min-width: 1150px) {
+    /* Free courses banner */
     .free-courses-banner p {
         font-size: 16px;
     }
 
+    /* Nav list */
     .nav-container {
         display: flex;
         align-items: center;
@@ -307,14 +327,16 @@ footer ul li a {
     .nav-list {
         display: flex;
         margin-left: 80px;
-        flex-direction: row;
+        flex-direction: row; /* Changing nav list to be horizontal for desktop version */
         justify-content: flex-end;
     }
 
+    /* Grey box styling */
     .current {
         padding: 10px;
     }
 
+    /* Signup and login button customization */
     .nav-btns {
         display: flex;
         align-items: center;
@@ -322,19 +344,22 @@ footer ul li a {
     }
 
     .signup {
-        white-space: nowrap;
+        white-space: nowrap; /* Ensures two words don't go on two different lines */
     }
 
+    /* Container styling */
     .container {
         max-width: 1100px;
         margin: 0 auto;
     }
 
+    /* Course banner image styling */
     .course-banner {
-        width: 1100px;
-        margin-bottom: 90px;
+        width: 1100px; /* Ensures proper sizing across screen sizes */
+        margin-bottom: 90px; /* Spacing */
     }
 
+    /* Grid layout for desktop */
     .courses-open-layout {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -347,6 +372,7 @@ footer ul li a {
         padding: 0 10px;
     }
 
+    /* Changing info card styling for desktop */
     .large-info-card {
         width: 100%; 
         padding: 18px;
@@ -363,6 +389,7 @@ footer ul li a {
         justify-content: space-between;
     }
 
+    /* Button styling and flex boxes */
     .time-btn,
     .time-btn-highlighted {
         display: flex;
@@ -376,12 +403,14 @@ footer ul li a {
         white-space: nowrap;
     }
 
+    /* Grid layout customization */
     .header-layout {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
         align-items: start; 
     }
 
+    /* H1 styling and spacing */
     h1 {
         margin-left: 20px;
     }

@@ -9,7 +9,9 @@
 
 <body itemscope itemtype="https://schema.org/WebPage">
 
-    <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+    <!-- Skip links to every section so user pressing tab can quickly skip to any section they want by just using their keyboard -->
+
+    <nav itemscope itemtype="https://schema.org/SiteNavigationElement"> <!-- Schema link identifies this nav section as a site nav element -->
         
         <a href="#main" class="skip-link" role="link" aria-label="Skip to the main content of the page" itemprop="url">
             <span itemprop="name">Skip to Main Content</span>
@@ -21,20 +23,20 @@
 
     </nav>
     
-    <header role="banner" itemscope itemtype="https://schema.org/WPHeader">
+    <header role="banner" itemscope itemtype="https://schema.org/WPHeader"> <!-- Schema link identifies this nav section as a header section -->
         
         <!-- Free Courses Banner -->
         <div class="free-courses-banner" role="status" aria-live="polite" itemscope itemtype="https://schema.org/SpecialAnnouncement">
             <p itemprop="text">Free Courses 🌟 Sale Ends Soon, Get It Now ➔</p>
         </div>
 
-            <div class="nav-container">
-                <img src="/images/logo.svg" alt="Company logo" itemprop="logo">
+            <div class="nav-container"> <!-- Entire navigation section, wrapped everything in a class so I can have more control while applying styles -->
+                <img src="/images/logo.svg" alt="Company logo" itemprop="logo"> <!-- Company logo, used schema itemprop command to identify it as a logo, alt text also gives screenreader more information about the image -->
 
                 <div class="nav-content">
                     <!-- Navigation Bar -->
                     <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                        <ul class="nav-list" role="list">
+                        <ul class="nav-list" role="list"> <!-- ARIA role identifying this as a list -->
                             <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="index.html" class="current" itemprop="url" role="link"><span itemprop="name">Home</span></a></li>
                             <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">Courses</span></a></li>
                             <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">About Us</span></a></li>
@@ -53,20 +55,32 @@
     </header>
 
     <main id="main">
+        <!-- Container wrapping all of the sections expect for the footer to have an equal amount of white space on each side and scale properly across screen sizes -->
         <div class="container">
+            <!-- Header -->
             <section class="header-layout" role="banner" itemscope itemtype="https://schema.org/Course">
+                <!-- Main h1 for this page -->
                 <h1 role="heading" aria-level="2" itemprop="headline">UI/UX Design Course</h1>
                 <p itemprop="description">Welcome to our UI/UX Design course! This comprehensive program will equip you with the knowledge and skills to create exceptional user interfaces (UI) and enhance user experiences (UX). Dive into the world of design thinking, wireframing, prototyping, and usability testing. Below is an overview of the curriculum<p>
             </section>
 
+            <!-- Banner image for this page -->
             <img src="images/course-card-2.png" class="course-banner" alt="Person typing on a keyboard in front of a computer" role="img" itemprop="image">
 
+            <!-- Courses cards -->
+
+            <!-- I used "courses-open-layout" class to layout all of the cards in a grid layout for the desktop media query -->
             <div class="courses-open-layout">
+                    
+                    <!-- I used div class with the same "large-card" and "info-card" name through each service card so that I can easily apply the same styles to everything in this section -->
+                    <!-- Large card -->
                     <section class="large-info-card" role="region" aria-labelledby="section-title" itemscope itemtype="https://schema.org/ItemList">
                         
+                        <!-- Match id to aria-labelledby -->
                         <h2 id="section-title" role="heading" aria-level="2" itemprop="headline">01</h2>
                         <h3 class="info-sub-header" role="heading" aria-level="3" itemprop="headline">Introduction to UI/UX Design</h3>
                         
+                        <!-- Smaller card within large card -->
                         <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                             
                             <div class="info-crd-content">
@@ -81,6 +95,7 @@
                             
                         </div>
 
+                        <!-- Used special class to wrap this card so I can apply different colours to it -->
                         <div class="info-card-highlighted" role="article" aria-labelledby="highlighted-title" itemscope itemtype="https://schema.org/CourseSection"> 
                             
                             <div class="info-crd-content">
@@ -95,6 +110,7 @@
                             
                         </div>
 
+                        <!-- Smaller card within large card -->
                         <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                             
                             <div class="info-crd-content">
@@ -110,11 +126,13 @@
                         </div>
                     </section>
 
+                    <!-- Large card -->
                     <section class="large-info-card" role="region" aria-labelledby="section-title-2" itemscope itemtype="https://schema.org/ItemList">
                         
                         <h2 id="section-title-2" role="heading" aria-level="2" itemprop="headline">02</h2>
                         <h3 class="info-sub-header" role="heading" aria-level="3" itemprop="headline">User Research and Analysis</h3>
                         
+                        <!-- Smaller card within large card -->
                         <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                             
                             <div class="info-crd-content">
@@ -129,6 +147,7 @@
                             
                         </div>
 
+                        <!-- Smaller card within large card -->
                         <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                             
                             <div class="info-crd-content">
@@ -143,6 +162,7 @@
                             
                         </div>
 
+                        <!-- Smaller card within large card -->
                         <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                             
                             <div class="info-crd-content">
@@ -158,11 +178,13 @@
                         </div>
                     </section>
 
+                    <!-- Large card -->
                     <section class="large-info-card" role="region" aria-labelledby="section-title-3" itemscope itemtype="https://schema.org/ItemList">
                         
                         <h2 id="section-title-3" role="heading" aria-level="2" itemprop="headline">03</h2>
                         <h3 class="info-sub-header" role="heading" aria-level="3" itemprop="headline">Wireframing and Prototyping</h3>
                         
+                        <!-- Smaller card within large card -->
                         <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                             
                             <div class="info-crd-content">
@@ -177,6 +199,7 @@
                             
                         </div>
 
+                        <!-- Smaller card within large card -->
                         <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                             
                             <div class="info-crd-content">
@@ -191,6 +214,7 @@
                             
                         </div>
 
+                        <!-- Smaller card within large card -->
                         <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                             
                             <div class="info-crd-content">
@@ -206,11 +230,13 @@
                         </div>
                     </section>
 
+                    <!-- Large card -->
                     <section class="large-info-card" role="region" aria-labelledby="section-title-4" itemscope itemtype="https://schema.org/ItemList">
                         
                         <h2 id="section-title-4" role="heading" aria-level="2" itemprop="headline">04</h2>
                         <h3 class="info-sub-header" role="heading" aria-level="3" itemprop="headline">Visual Design and Branding</h3>
                         
+                        <!-- Smaller card within large card -->
                         <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                             
                             <div class="info-crd-content">
@@ -225,6 +251,7 @@
                             
                         </div>
 
+                        <!-- Smaller card within large card -->
                         <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                             
                             <div class="info-crd-content">
@@ -239,6 +266,7 @@
                             
                         </div>
 
+                        <!-- Smaller card within large card -->
                         <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                             
                             <div class="info-crd-content">
@@ -254,11 +282,13 @@
                         </div>
                     </section>
 
+                    <!-- Large card -->
                     <section class="large-info-card" role="region" aria-labelledby="section-title-5" itemscope itemtype="https://schema.org/ItemList">
                         
                         <h2 id="section-title-5" role="heading" aria-level="2" itemprop="headline">05</h2>
                         <h3 class="info-sub-header" role="heading" aria-level="3" itemprop="headline">Usability Testing and Iteration</h3>
                         
+                        <!-- Smaller card within large card -->
                         <div class="info-card" role="article"> 
                             
                             <div class="info-crd-content">
@@ -273,6 +303,7 @@
                             
                         </div>
 
+                        <!-- Smaller card within large card -->
                         <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                             
                             <div class="info-crd-content">
@@ -287,6 +318,7 @@
                             
                         </div>
 
+                        <!-- Smaller card within large card -->
                         <div class="info-card" role="article" itemscope itemtype="https://schema.org/CourseSection"> 
                             
                             <div class="info-crd-content">
@@ -305,9 +337,12 @@
         </div>
     </main>
 
+    <!-- Footer -->
     <footer id="footer" role="contentinfo" itemscope itemtype="https://schema.org/Organization">
         <div class="container">
-            <img src="images/logo.svg" class="footer-logo" role="img" alt="Company Logo" itemprop="logo">
+            <img src="images/logo.svg" class="footer-logo" role="img" alt="Company Logo" itemprop="logo"> <!-- Company logo, used itemprop="logo" to identify the image as a logo to be more specific -->
+            
+            <!-- Contact info list -->
             <ul role="list" aria-label="Contact Information">
                 <li class="footer-flex-display" role="listitem" itemscope itemprop="contactPoint" itemtype="https://schema.org/ContactPoint">
                     <img src="images/letter.svg" role="img" alt="Letter icon" itemprop="image">
@@ -323,9 +358,13 @@
                 </li>
             </ul>
             
+            <!-- Used "footer-grid-layout" class to wrap the different lists in the footer on the same line and build a basic grid layout -->
             <div class="footer-grid-layout">
+                <!-- Identifiying this list as an item of the grid -->
                 <div class="grid-item">
                     <h2 role="heading" aria-level="2" itemprop="headline">Home</h2>
+                    
+                    <!-- List leading to other pages -->
                     <ul class="home-and-about-list" role="list" itemscope itemtype="https://schema.org/BreadcrumbList">
                         <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits">Benefits</a><meta itemprop="position" content="1"></li>
                         <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#courses">Our Courses</a><meta itemprop="position" content="2"></li>
@@ -333,7 +372,7 @@
                         <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#faq">Our FAQ</a><meta itemprop="position" content="4"></li>
                     </ul>
                 </div>
-                
+                <!-- Identifiying this list as an item of the grid -->
                 <div class="grid-item">
                     <h2 role="heading" aria-level="2" itemprop="headline">About Us</h2>
                     <ul class="home-and-about-list" role="list" itemscope itemtype="https://schema.org/ItemList">
@@ -343,7 +382,7 @@
                     </ul>
                 </div>
             
-
+                <!-- Identifiying this list as an item of the grid -->
                 <div class="grid-item">
                     <h2 class="social-profiles" role="heading" aria-level="2" itemprop="headline">Social Profiles</h2>
                     <ul class="social-profiles-flex" role="list" aria-label="Social Media Links" itemscope itemprop="sameAs" itemtype="https://schema.org/URL">
@@ -360,6 +399,7 @@
                 </div>
             </div>
 
+            <!-- Company copyright line -->
             <p class="copyright-line" itemscope itemtype="https://schema.org/CreativeWork">&copy; 2025 Skillbridge. All rights reserved.</p>
         </div>
     </footer>

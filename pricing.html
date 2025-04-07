@@ -9,7 +9,9 @@
 
 <body itemscope itemtype="https://schema.org/WebPage">
 
-    <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+    <!-- Skip links to every section so user pressing tab can quickly skip to any section they want by just using their keyboard -->
+
+    <nav itemscope itemtype="https://schema.org/SiteNavigationElement"> <!-- Schema link identifies this nav section as a site nav element -->
         
         <a href="#main" class="skip-link" role="link" aria-label="Skip to the main content of the page" itemprop="url">
             <span itemprop="name">Skip to Main Content</span>
@@ -25,20 +27,20 @@
 
     </nav>
     
-    <header role="banner" itemscope itemtype="https://schema.org/WPHeader">
+    <header role="banner" itemscope itemtype="https://schema.org/WPHeader"> <!-- Schema link identifies this nav section as a header section -->
         
         <!-- Free Courses Banner -->
         <div class="free-courses-banner" role="status" aria-live="polite" itemscope itemtype="https://schema.org/SpecialAnnouncement">
             <p itemprop="text">Free Courses 🌟 Sale Ends Soon, Get It Now ➔</p>
         </div>
 
-            <div class="nav-container">
-                <img src="/images/logo.svg" alt="Company logo" itemprop="logo">
+            <div class="nav-container"> <!-- Entire navigation section, wrapped everything in a class so I can have more control while applying styles -->
+                <img src="/images/logo.svg" alt="Company logo" itemprop="logo"> <!-- Company logo, used schema itemprop command to identify it as a logo, alt text also gives screenreader more information about the image -->
 
                 <div class="nav-content">
                     <!-- Navigation Bar -->
-                    <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                        <ul class="nav-list" role="list">
+                    <nav role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement"> <!-- Schema link identifies this nav section as a site nav element -->
+                        <ul class="nav-list" role="list"> <!-- ARIA role identifying this as a list -->
                             <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="index.html" class="current" itemprop="url" role="link"><span itemprop="name">Home</span></a></li>
                             <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="courses-open.html" itemprop="url" role="link"><span itemprop="name">Courses</span></a></li>
                             <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPageElement"><a href="#" itemprop="url" role="link"><span itemprop="name">About Us</span></a></li>
@@ -57,57 +59,70 @@
     </header>
 
     <main id="main" role="main" itemscope itemtype="https://schema.org/WebPageElement">
+        <!-- Container wrapping all of the sections expect for the footer to have an equal amount of white space on each side and scale properly across screen sizes -->
         <div class="container">
+            <!-- Header -->
             <section class="header-layout">
+                <!-- Main h1 for this page -->
                 <h1 role="heading" aria-level="1" itemprop="headline">Our Pricings</h1>
                 <p>Welcome to SkillBridge's Pricing Plan page, where we offer two comprehensive options to cater to your needs: Free and Pro. We believe in providing flexible and affordable pricing options for our services. Whether you're an individual looking to enhance your skills or a business seeking professional development solutions, we have a plan that suits you. Explore our pricing options below and choose the one that best fits your requirements.<p>
             </section>
         </div>
 
+        <!-- Wrapped button and "yearly" text together so I can apply the same white background to them -->
         <div class="monthly-yearly-box" role="tablist" aria-label="Pricing options">
             <button class="monthly-btn" role="tab" aria-selected="true">Monthly</button>
             <p class="yearly-text" role="tab" aria-selected="false">Yearly</p>
         </div>
 
         <div class="container">
+            <!-- Pricing Cards -->
+                
             <div class="card-section">
+                <!-- Used pricing-layout class to turn cards into a grid layout for the desktop media query -->
                 <div class="pricing-layout">
+                    
+                    <!-- I used div class with the same "pricing-card" name through each service card so that I can easily apply the same styles to everything in this section -->
                     <div class="pricing-card" role="article" aria-labelledby="free-plan" itemscope itemtype="https://schema.org/Product">
+                        <!-- Used "card-background" class to give a white background to the two cards and seperate them from the grey color of the body -->
                         <div class="card-background">
+                            <!-- Applied a class to the h2 to make it easier to target and apply styles in the CSS -->
                             <div class="plan-text">
                                 <h2 id="free-plan" role="heading" aria-level="2" itemprop="headline">Free Plan</h2>
                             </div>
-                            <h3 role="heading" aria-level="3" itemprop="price">$0<strong>/month</strong></h3>
+                            <h3 role="heading" aria-level="3" itemprop="price">$0<strong>/month</strong></h3> <!-- Using strong tag helps me to target just the word "/month" to change the color and size without affecting the "$0" text -->
                             <div class="white-background">
                                 
-                                    <h4 role="heading" aria-level="4" itemprop="headline">Available Features</h4>
+                                    <h4 role="heading" aria-level="4" itemprop="headline">Available Features</h4> <!-- Itemprop paired with schema link for the overall section helps improve accessibility by defining what this section is -->
+                                    
+                                    <!-- List of free plan advantages/disadvantages  -->
                                     <ul role="list" itemscope itemtype="https://schema.org/Product">
                                         <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image"> <!-- Alt text gives more context for screenreaders -->
                                             <p>Access to selected free courses.</p>
                                         </li>
                                         <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image"> <!-- Alt text gives more context for screenreaders -->
                                             <p>Limited course materials and resources.</p>
                                         </li>
                                         <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image"> <!-- Alt text gives more context for screenreaders -->
                                             <p>Basic community support.</p>
                                         </li>
                                         <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image"> <!-- Alt text gives more context for screenreaders -->
                                             <p>No certification upon completion.</p>
                                         </li>
                                         <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                            <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image"> <!-- Alt text gives more context for screenreaders -->
                                             <p>Ad-supported platform.</p>
                                         </li>
                                         <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                            <img src="images/x.svg" role="img" alt="x" itemprop="image">
+                                            <img src="images/x.svg" role="img" alt="x" itemprop="image"> <!-- Alt text gives more context for screenreaders -->
                                             <p>Access to exclusive Pro Plan community forums.</p>
                                         </li>
                                         <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                            <img src="images/x.svg" role="img" alt="x" itemprop="image">
+                                            <img src="images/x.svg" role="img" alt="x" itemprop="image"> <!-- Alt text gives more context for screenreaders -->
                                             <p>Early access to new courses and updates.</p>
                                         </li>
                                     </ul>
@@ -121,40 +136,44 @@
                     </div>
 
                     <div class="pricing-card" role="article" aria-labelledby="free-plan" itemscope itemtype="https://schema.org/Product">
+                        <!-- Used "card-background" class to give a white background to the two cards and seperate them from the grey color of the body -->
                         <div class="card-background">
+                            <!-- Applied a class to the h2 to make it easier to target and apply styles in the CSS -->
                             <div class="plan-text">
                                 <h2 id="pro-plan" role="heading" aria-level="2" itemprop="headline">Pro Plan</h2>
                             </div>
-                            <h3 role="heading" aria-level="3" itemprop="price">$79<strong>/month</strong></h3>
+                            <h3 role="heading" aria-level="3" itemprop="price">$79<strong>/month</strong></h3> <!-- Using strong tag helps me to target just the word "/month" to change the color and size without affecting the "$79" text -->
                             <div class="white-background">
                                 <h4 role="heading" aria-level="4" itemprop="headline">Available Features</h4>
+                                
+                                <!-- List of pro plan advantages -->
                                 <ul role="list" itemscope itemtype="https://schema.org/Product">
                                     <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                        <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                        <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image"> <!-- Alt text gives more context for screenreaders -->
                                         <p>Unlimited access to all courses.</p>
                                     </li>
                                     <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                        <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                        <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image"> <!-- Alt text gives more context for screenreaders -->
                                         <p>Unlimited course materials and resources.</p>
                                     </li>
                                     <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                        <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                        <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image"> <!-- Alt text gives more context for screenreaders -->
                                         <p>Priority support from instructors.</p>
                                     </li>
                                     <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                        <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                        <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image"> <!-- Alt text gives more context for screenreaders -->
                                         <p>Course completion certificates.</p>
                                     </li>
                                     <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                        <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                        <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image"> <!-- Alt text gives more context for screenreaders -->
                                         <p>Ad-free experience.</p>
                                     </li>
                                     <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                        <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                        <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image"> <!-- Alt text gives more context for screenreaders -->
                                         <p>Access to exclusive Pro Plan community forums.</p>
                                     </li>
                                     <li role="listitem" itemprop="additionalType" content="https://schema.org/Feature">
-                                        <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image">
+                                        <img src="images/checkmark.svg" role="img" alt="checkmark" itemprop="image"> <!-- Alt text gives more context for screenreaders -->
                                         <p>Early access to new courses and updates.</p>
                                     </li>
                                 </ul>
@@ -171,10 +190,13 @@
         </div>
         
         <div class="container">
+            <!-- Frequently Asked Questions -->
             <section class="faq-section" id="faq" role="region" aria-labelledby="faq-header" itemscope itemtype="https://schema.org/FAQPage">
                 <div class="container">
+                    <!-- Used faq-grid-layout class to turn different parts of the faq section into a grid layout for the desktop media query -->
                     <div class="faq-grid-layout">
                         <div class="faq-grid-item">
+                            <!-- Section description -->
                             <h2 class="faq-header" id="faq-header" role="heading" aria-level="2">Frequently Asked Questions</h2>
                             <p class="faq-sub-header">Still you have any questions? Contact our</p>
                             <p class="faq-sub-header">Team via support@skillbridge.com</p>
@@ -185,12 +207,17 @@
 
                         <!-- FAQ Card -->
                         <div class="faq-grid-item">
+                            <!-- I used div class with the same "faq-card"/"faq-large-card" name through each service card so that I can easily apply the same styles to everything in this section -->
                             <div class="faq-large-card" role="article" aria-labelledby="frequently-asked-questions" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <!-- Wrapped h2 and image in flexbox so I can put them in the same line in CSS -->
+                                <!-- Question -->
                                 <div class="q-and-a-flex">
                                     <h2 id="frequently-asked-questions" role="heading" aria-level="2" itemprop="headline">Can I enroll in multiple courses at once?</h2>
                                     <img src="images/yellow-x.svg" role="img" alt="x" itemprop="image">
                                 </div>
 
+
+                                <!-- Answer -->
                                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                                     <p hidden role="region" aria-live="polite" itemprop="text">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
                                 </div>
@@ -201,21 +228,25 @@
                                 </div>
                             </div>
 
+                            <!-- Question -->
                             <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions-3" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <h2 id="frequently-asked-questions-3" role="heading" aria-level="2" itemprop="headline">What kind of support can I expect from instructors</h2>
                                 <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
                             </div>
 
+                            <!-- Question -->
                             <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions-4" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <h2 id="frequently-asked-questions-4" role="heading" aria-level="2" itemprop="headline">Are the courses self-paced or do they have specific start and end dates?</h2>
                                 <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
                             </div>
 
+                            <!-- Question -->
                             <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions-5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <h2 id="frequently-asked-questions-5" role="heading" aria-level="2" itemprop="headline">Are there any prerequisites for the courses?</h2>
                                 <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
                             </div>
 
+                            <!-- Question -->
                             <div class="faq-mini-card" role="article" aria-labelledby="frequently-asked-questions-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <h2 id="frequently-asked-questions-6" role="heading" aria-level="2" itemprop="headline">Can I download the course materials for offline access?</h2>
                                 <img src="images/plus.svg" role="img" alt="Plus symbol" itemprop="image">
@@ -228,9 +259,12 @@
 
     </main>
 
+    <!-- Footer -->
     <footer id="footer" role="contentinfo" itemscope itemtype="https://schema.org/Organization">
         <div class="container">
-            <img src="images/logo.svg" class="footer-logo" role="img" alt="Company Logo" itemprop="logo">
+            <img src="images/logo.svg" class="footer-logo" role="img" alt="Company Logo" itemprop="logo"> <!-- Company logo, used itemprop="logo" to identify the image as a logo to be more specific -->
+            
+            <!-- Contact info list -->
             <ul role="list" aria-label="Contact Information">
                 <li class="footer-flex-display" role="listitem" itemscope itemprop="contactPoint" itemtype="https://schema.org/ContactPoint">
                     <img src="images/letter.svg" role="img" alt="Letter icon" itemprop="image">
@@ -246,9 +280,13 @@
                 </li>
             </ul>
             
+            <!-- Used "footer-grid-layout" class to wrap the different lists in the footer on the same line and build a basic grid layout -->
             <div class="footer-grid-layout">
+                <!-- Identifiying this list as an item of the grid -->
                 <div class="grid-item">
                     <h2 role="heading" aria-level="2" itemprop="headline">Home</h2>
+                    
+                    <!-- List leading to other pages -->
                     <ul class="home-and-about-list" role="list" itemscope itemtype="https://schema.org/BreadcrumbList">
                         <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#benefits">Benefits</a><meta itemprop="position" content="1"></li>
                         <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#courses">Our Courses</a><meta itemprop="position" content="2"></li>
@@ -256,7 +294,7 @@
                         <li role="listitem" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a href="#faq">Our FAQ</a><meta itemprop="position" content="4"></li>
                     </ul>
                 </div>
-                
+                <!-- Identifiying this list as an item of the grid -->
                 <div class="grid-item">
                     <h2 role="heading" aria-level="2" itemprop="headline">About Us</h2>
                     <ul class="home-and-about-list" role="list" itemscope itemtype="https://schema.org/ItemList">
@@ -266,7 +304,7 @@
                     </ul>
                 </div>
             
-
+                <!-- Identifiying this list as an item of the grid -->
                 <div class="grid-item">
                     <h2 class="social-profiles" role="heading" aria-level="2" itemprop="headline">Social Profiles</h2>
                     <ul class="social-profiles-flex" role="list" aria-label="Social Media Links" itemscope itemprop="sameAs" itemtype="https://schema.org/URL">
@@ -283,6 +321,7 @@
                 </div>
             </div>
 
+            <!-- Company copyright line -->
             <p class="copyright-line" itemscope itemtype="https://schema.org/CreativeWork">&copy; 2025 Skillbridge. All rights reserved.</p>
         </div>
     </footer>
